@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- ******************Lines for clearing cache start********************* -->
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />  
+		<meta http-equiv="Expires" content="0" />  
+		<!-- ******************Lines for clearing cache ends********************* -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="https://myimpact.in/impact-icon16.ico" type="image/x-icon">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>My Impact</title>
+		<base href="/">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<!-- Custom styles for this template -->
+
+		<link
+		href="assets/css/style.css" rel="stylesheet">
+		<!-- Custom styles for scrollbar -->
+
+		<link type="text/css" rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/icofont.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/all.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		    <![endif]-->
+
+		<link type="text/css" rel="stylesheet" href="assets/css/daterangepicker.css"> <style>
+			html,
+			body {
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<app-root></app-root>
+		<!-- Bootstrap core JavaScript
+		    ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script> 
+		<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.6.0/dist/chartjs-plugin-datalabels.min.js"></script> -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.6.0/dist/chartjs-plugin-datalabels.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+		<!-- custom scrollbar plugin -->
+		<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="assets/js/moment.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+
+		<script>
+			(function ($) {
+$(window).on("load", function () { /*$("#anc").click(function(){
+					//alert("hi");
+					$(".nav-width").toggleClass("exp");
+				})*/
+
+});
+})(jQuery);
+		</script>
+
+		<script>
+
+			$('.dropdown-menu a').on('click', function () {
+$('.dropdown-toggle').html($(this).html());
+})
+		</script>
+		<!--For Select Box-->
+		<script>
+			var x,
+i,
+j,
+selElmnt,
+a,
+b,
+c;
+/*look for any elements with the class "my-select":*/
+x = document.getElementsByClassName("my-select");
+for (i = 0; i < x.length; i++) {
+selElmnt = x[i].getElementsByTagName("select")[0];
+/*for each element, create a new DIV that will act as the selected item:*/
+a = document.createElement("DIV");
+a.setAttribute("class", "select-selected");
+a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+x[i].appendChild(a);
+/*for each element, create a new DIV that will contain the option list:*/
+b = document.createElement("DIV");
+b.setAttribute("class", "select-items select-hide");
+for (j = 0; j < selElmnt.length; j++) { /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+c = document.createElement("DIV");
+c.innerHTML = selElmnt.options[j].innerHTML;
+c.addEventListener("click", function (e) { /*when an item is clicked, update the original select box,
+        and the selected item:*/
+var y,
+i,
+k,
+s,
+h;
+s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+h = this.parentNode.previousSibling;
+for (i = 0; i < s.length; i++) {
+if (s.options[i].innerHTML == this.innerHTML) {
+s.selectedIndex = i;
+h.innerHTML = this.innerHTML;
+y = this.parentNode.getElementsByClassName("same-as-selected");
+for (k = 0; k < y.length; k++) {
+y[k].removeAttribute("class");
+}
+this.setAttribute("class", "same-as-selected");
+break;
+}
+}
+h.click();
+});
+b.appendChild(c);
+}
+x[i].appendChild(b);
+a.addEventListener("click", function (e) { /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+e.stopPropagation();
+closeAllSelect(this);
+this.nextSibling.classList.toggle("select-hide");
+this.classList.toggle("select-arrow-active");
+});
+}
+function closeAllSelect(elmnt) { /*a function that will close all select boxes in the document,
+  except the current select box:*/
+var x,
+y,
+i,
+arrNo = [];
+x = document.getElementsByClassName("select-items");
+y = document.getElementsByClassName("select-selected");
+for (i = 0; i < y.length; i++) {
+if (elmnt == y[i]) {
+arrNo.push(i)
+} else {
+y[i].classList.remove("select-arrow-active");
+}
+}
+for (i = 0; i < x.length; i++) {
+if (arrNo.indexOf(i)) {
+x[i].classList.add("select-hide");
+}
+}
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+		</script>
+		<!--For Select Box End-->
+	<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+</html>

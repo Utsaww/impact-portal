@@ -1,0 +1,676 @@
+
+<ng4-loading-spinner  [timeout]="40000000"> </ng4-loading-spinner>
+<!-- <ng4-loading-spinner ></ng4-loading-spinner> -->
+<div class="container-fluid d-flex h-100">
+  <div class="row flex-grow-1">
+      <div class="d-flex w-100 ssflex">
+<!--Left Navigation Start-->
+<div class="nav-width d-flex flex-column" id="opencloseMenu">
+  <div>
+     <a href="javascript:void(0)" style="padding: 12px 19px 19px 19px;
+        display: inline-block;" id="anc" (click)="openMenu($event)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.233 18.332" width="26" height="18" style="vertical-align: top;">
+        
+        <g id="Symbol_1_3" data-name="Symbol 1 – 3" transform="translate(-16.713 -22.746)">
+        <rect id="Rectangle_12" data-name="Rectangle 12" class="fill-white" width="26.233" height="3.928" rx="1.964" transform="translate(16.713 22.746)"/>
+        <rect id="Rectangle_13" data-name="Rectangle 13" class="fill-white" width="26.233" height="3.928" rx="1.964" transform="translate(16.713 29.948)"/>
+        <rect id="Rectangle_14" data-name="Rectangle 14" class="fill-white" width="26.233" height="3.928" rx="1.964" transform="translate(16.713 37.149)"/>
+        </g>
+      </svg>
+    
+    </a>
+  </div>
+  <div class="top-nav">
+    <div class="smart-manage">
+      <a routerLink="/home">
+        <span data-toggle="tooltip" title="Smart Manage" data-placement="right">
+      <svg id="dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20" width="20">
+        <defs>
+        </defs>
+        <g id="Group_11" data-name="Group 11">
+        <g id="Group_10" data-name="Group 10">
+          <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-1" width="8.889" height="6.667" transform="translate(11.111)"/>
+          <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-1" width="8.889" height="11.111"/>
+          <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-1" width="8.889" height="6.667" transform="translate(0 13.333)"/>
+          <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-1" width="8.889" height="11.111" transform="translate(11.111 8.889)"/>
+        </g>
+        </g> 
+      </svg>
+      </span>
+        <div class="nav-text">Smart Manage</div>
+      </a>
+    </div>
+    <div class="smart-manage">
+      <a href="javascript:void(0)" class="active">
+          <span data-toggle="tooltip" title="Smart Dashboard" data-placement="right">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+          <defs>
+          </defs>
+          <g id="bar-chart" transform="translate(20) rotate(90)">
+          <path data-name="Path 3" class="cls-1" d="M0,15H20v1.25H0Z" transform="translate(0 3.75)"/>
+          <path data-name="Path 4" class="cls-1" d="M0,11H4v3.75H0Z" transform="translate(0 2.75)"/>
+          <path data-name="Path 6" class="cls-1" d="M8,5h4V16.25H8Z" transform="translate(0 1.25)"/>
+          <path data-name="Path 7" class="cls-1" d="M12,0h4V17.5H12Z" transform="translate(4)"/>
+          </g>
+        </svg>
+        </span>
+        <div class="nav-text">Smart Dashboard</div>
+      </a>
+    </div>
+    <div class="smart-manage">
+        <a routerLink="/smartanalyse">
+            <span data-toggle="tooltip" title="Smart Analyse" data-placement="right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 15" width="20" height="15">
+                <defs></defs>
+                <path id="Path_8" data-name="Path 8" class="cls-1" d="M20,1.758H10.659V0H9.341V1.758H0V3.077H1.758V14.945H18.242V3.077H20Zm-9.021,8.835L9.021,8.635,5.3,12.354l-.932-.932L9.021,6.77l1.959,1.958L14.7,5.009l.932.932Z"/>
+            </svg>
+            </span>
+            <div class="nav-text">Smart Analyse</div>
+        </a>
+    </div>
+
+    <div class="smart-manage">
+      <a routerLink="/smartstats">
+          <span data-toggle="tooltip" title="Smart Stats" data-placement="right">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" width="20" height="20" xml:space="preserve">
+                  <polygon class="cls-1" points="20,18.8 20,20 0,20 0,0 1.3,0 1.3,18.8 "/>
+                  <polygon class="cls-1" points="8.9,7.6 14,8.8 15.8,6 17.4,6.9 17.5,2.2 13.1,4.5 14.7,5.4 13.5,7.4 8.6,6.3 3.3,11.3 4.2,12.1 "/>
+                  <polygon class="cls-1" points="7.5,17.6 10,17.6 10,9.1 9.3,8.9 7.5,10.6 "/>
+                  <polygon class="cls-1" points="3.8,13.4 3.8,17.6 6.3,17.6 6.3,11.8 4.2,13.8 "/>
+                  <polygon class="cls-1" points="15,9.6 15,17.6 17.5,17.6 17.5,8.4 16.2,7.6 "/>
+                  <polygon class="cls-1" points="13.8,17.6 13.8,10 11.3,9.4 11.3,17.6 "/>
+                  </svg>
+          </span>
+          <div class="nav-text">Smart Stats</div>
+      </a>
+    </div>
+
+
+    <div class="smart-manage">
+      <a (click)="advanceSearchModal()" href="javascript:void(0)">
+          <span data-toggle="tooltip" title="Advanced Search" data-placement="right">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20.78 19.95;" width="20" height="20" xml:space="preserve">                                                                                
+      <path class="cls-1" d="M20.27,16.69l-5.23-4.63c-0.12-0.11-0.25-0.19-0.39-0.25c0.68-1.16,1.07-2.51,1.07-3.95
+                      C15.71,3.52,12.2,0,7.86,0C3.52,0,0,3.52,0,7.86c0,4.34,3.52,7.86,7.86,7.86c1.56,0,3.02-0.46,4.25-1.25
+                      c0.08,0.16,0.19,0.32,0.34,0.45l5.23,4.63c0.64,0.58,1.63,0.53,2.21-0.11l0.49-0.54C20.96,18.26,20.91,17.27,20.27,16.69z
+                      M7.86,12.67c-2.66,0-4.82-2.16-4.82-4.81c0-2.66,2.16-4.81,4.82-4.81c2.66,0,4.81,2.15,4.81,4.81
+                      C12.67,10.51,10.51,12.67,7.86,12.67z"/>
+      <path class="cls-1" d="M20.27,16.69l-5.23-4.63c-0.12-0.11-0.25-0.19-0.39-0.25c0.68-1.16,1.07-2.51,1.07-3.95
+                      C15.71,3.52,12.2,0,7.86,0C3.52,0,0,3.52,0,7.86c0,4.34,3.52,7.86,7.86,7.86c1.56,0,3.02-0.46,4.25-1.25
+                      c0.08,0.16,0.19,0.32,0.34,0.45l5.23,4.63c0.64,0.58,1.63,0.53,2.21-0.11l0.49-0.54C20.96,18.26,20.91,17.27,20.27,16.69z
+                      M7.86,12.67c-2.66,0-4.82-2.16-4.82-4.81c0-2.66,2.16-4.81,4.82-4.81c2.66,0,4.81,2.15,4.81,4.81
+                      C12.67,10.51,10.51,12.67,7.86,12.67z"/>
+      </svg>
+      </span>
+                      <div class="nav-text">Advanced Search</div>
+      </a>
+</div>
+
+
+
+  </div>
+    <div class="top-nav bottom-nav">
+    <div class="smart-manage">
+      <a routerLink="/accountsettings/contactdetails">
+        <span data-toggle="tooltip" title="Account &amp; Settings" data-placement="right">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+        
+        <g id="settings-work-tool" transform="translate(-0.003 0)">
+        <g data-name="Group 18" transform="translate(0.003 0)">
+          <path data-name="Path 9" class="cls-1" d="M19.94,8.89A.651.651,0,0,0,19.3,8.4a2.208,2.208,0,0,1-1.511-3.843.555.555,0,0,0,.061-.754,9.9,9.9,0,0,0-1.584-1.6.557.557,0,0,0-.76.061,2.3,2.3,0,0,1-2.494.56A2.221,2.221,0,0,1,11.657.651a.555.555,0,0,0-.491-.584A9.984,9.984,0,0,0,8.917.061a.557.557,0,0,0-.5.572A2.225,2.225,0,0,1,7.052,2.767,2.311,2.311,0,0,1,4.577,2.2a.558.558,0,0,0-.755-.063A9.933,9.933,0,0,0,2.2,3.739a.556.556,0,0,0,.06.76,2.216,2.216,0,0,1,.559,2.5A2.312,2.312,0,0,1,.647,8.346a.544.544,0,0,0-.578.491,10.018,10.018,0,0,0,0,2.274.662.662,0,0,0,.656.492,2.193,2.193,0,0,1,2.058,1.37,2.224,2.224,0,0,1-.559,2.473.556.556,0,0,0-.061.754,9.931,9.931,0,0,0,1.582,1.6.556.556,0,0,0,.761-.06,2.3,2.3,0,0,1,2.493-.561A2.218,2.218,0,0,1,8.348,19.35a.555.555,0,0,0,.491.584,9.953,9.953,0,0,0,2.25.006.557.557,0,0,0,.5-.573,2.223,2.223,0,0,1,1.368-2.133,2.308,2.308,0,0,1,2.477.563.559.559,0,0,0,.755.063,9.956,9.956,0,0,0,1.618-1.6.555.555,0,0,0-.06-.76,2.216,2.216,0,0,1-.56-2.495,2.239,2.239,0,0,1,2.046-1.356l.124,0a.557.557,0,0,0,.585-.49A10.009,10.009,0,0,0,19.94,8.89Zm-9.922,4.467a3.336,3.336,0,1,1,3.336-3.336A3.339,3.339,0,0,1,10.019,13.357Z" transform="translate(-0.003 0)"/>
+        </g>
+        </g>
+      </svg>
+      </span>
+
+        <div class="nav-text">Account &amp; Settings</div>
+      </a>
+    </div>
+    <div class="smart-manage">
+      <a href="#">
+          <span data-toggle="tooltip" title="Logout" data-placement="right">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19.315" width="20">
+        <g id="logout" transform="translate(0 -1.66)">
+        <g data-name="Group 19" transform="translate(0 1.66)">
+          <path id="Path_10" data-name="Path 10" class="cls-1" d="M12.619,18.631H2.344V4H12.62a.413.413,0,0,0,.413-.413V2.073a.413.413,0,0,0-.413-.413H.413A.413.413,0,0,0,0,2.073v18.49a.413.413,0,0,0,.413.413H12.619a.413.413,0,0,0,.413-.413V19.043A.412.412,0,0,0,12.619,18.631Z" transform="translate(0 -1.66)"/>
+          <path id="Path_11" data-name="Path 11" class="cls-1" d="M33.956,25.245,28.4,19.691a.424.424,0,0,0-.583,0L26.5,21.009a.413.413,0,0,0,0,.583L29.01,24.1H18.15a.413.413,0,0,0-.413.413v2.045a.413.413,0,0,0,.413.413H29.01L26.5,29.481a.413.413,0,0,0,0,.583l1.318,1.318a.412.412,0,0,0,.583,0l5.554-5.554a.412.412,0,0,0,0-.584Z" transform="translate(-14.078 -15.879)"/>
+        </g>
+        </g>
+      </svg>
+      </span>
+        <div class="nav-text">Logout</div>
+      </a>
+    </div>
+  </div>
+  
+</div>
+<!--Left Navigation End-->
+      <div class="d-flex flex-grow-1">
+  <div id="outer1" class="d-flex flex-column flex-grow-1">
+          <div class="container-fluid">
+      <div class="row bg-white">
+              <div class="col-md-12" style="background-color: #fff; box-shadow: 0 1px 2px rgb(0, 0, 0, .2);">
+      <div class="float-left py-2">
+        <!-- <img src="assets/images/logo-impact.png"> -->
+        <img src="assets/images/login-mpactlogo.png" width="85">
+      </div>
+    <div class="styled-select blue semi-square" style="float: right; margin: 8px;">
+      <select [ngModel]="selectedclient" (ngModelChange)="changeclient($event)" name="client"> 
+        <option *ngFor="let clients of clientlist" [ngValue]="clients.clientid">{{clients.name}}</option>
+        </select>
+    </div>
+
+        </div>
+            </div>
+    </div>
+          <div id="two1" class="d-flex h-100" style="background-color: #F2F5FA;">
+      <div id="outer2" class="d-flex flex-row flex-grow-1 h-100">
+              <div id="two2" class="h-100 flex-grow-1">
+          <div id="outer3" class="d-flex flex-column flex-grow-1 h-100">
+                  <div id="two3" class="d-flex h-100"> 
+              <!--table comes here-->
+              <div class="d-flex h-100 flex-column w-100">
+    
+                  <div class="d-flex flex-grow-0 h-100">
+                      <div class="col-md-12 d-flex flex-column list-info h-100 p-0 flex-grow-0">
+                             
+          <!-- Dash -->
+          <div class="d-flex h-100 flex-column">
+            
+            <!--dash header-->
+              <div class="container-fluid pb-2 d-flex flex-column">
+              <div class="row">
+						<div class="col-12">
+						<div class="dropdown media-dropdown">
+						  <a class="dropdown-toggle media-dropdown" href="javascript:void(0)" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span id="selectedType">Today</span>
+						  </a>
+
+						  <div class="dropdown-menu selectperiod" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyDate('today');">Today</a>
+							<!--<a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyDate('yesterday');">Yesterday</a>-->
+							<a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyDate('7days');">Last 7 Days</a>
+							<a class="dropdown-item" href="javascript:void(0)">Custom</a>
+						  </div>
+						</div>
+						</div>
+					 </div>
+					<div class="row dvresponsivedaterange media-dropdown" style="display: none;">
+            <input  type="text" style="height:auto; padding:0px 12px; font-size: 13px;" name="rangevalue" value="" class="form-control py-1 config-demo">
+						<!-- <div class="col-5 pr-2">
+							<input type="date" class="form-control media-dropdown" style="font-size: 13px;">
+						</div>
+						<div class="col-5 pr-2 pl-2">
+							<input type="date" class="form-control media-dropdown" style="font-size: 13px;">
+						</div>
+						<div class="col-2 pl-2">
+							<input type="button" class="btn impact-primary media-dropdown" value="ok"  style="width: 100%; min-width:auto; margin: 8px 0;">
+						</div> -->
+					 </div>
+                <div class="row">
+                  <div class="col-md-10 hidess">
+                    <ul class="nav nav-pills custom-pills" role="tablist">
+                      <li role="presentation" [class.active] = "isActiveToday" ><a href="javascript:void(0)" (click)="getArticlebyDate('today');">Today</a></li>
+                      <li role="presentation" [class.active] = "isActive7Days" ><a href="javascript:void(0)" (click)="getArticlebyDate('7days');">Last 7 Days</a></li>
+                      <li role="presentation" [class.active] = "isActivedaterange"><a id="dateclick" (click)="getArticlebyDaterange('daterange');" href="javascript:void(0)"><span>
+                        <i class="fas fa-calendar-alt"></i>
+                        <!-- <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVGhD7Ze/SxxBHMVPSC+CRRLw4q4xRcAqlkKadNYhJCly3z0VrBQsg0gCYh9IRIjOLMH/II1YpJCQwoAQEQVJQFKIWCgRIhaib3e/t7c7zi5h9wJzxzz4FDvvO7Pz9scwU/lXuSSfO544cj15FUJyz/X8YbZLy/HkG4fkHx77Etdf+7yPd9lujR7PfbnlkDiLQzAItsElpXSflh+qY4fjk3zHJa2RO7HUHQ0sDqJrv5q8Lis8kFGe+GfddcvUVkHQ+SW+zdNggCzUIK1GDZIH5rJZHf90J6hPCcaxrkMSk4KEkJgP6lPSFiqYFgR1H4L6lHSFKgjyuzq52uPUVoZ0fmlIrAXjD9T8Z1pfoXAQ07BBTKOzg2Bv87MNecvT70AN0rLbbjyYWO3l6Tel+wZNx65apmGDmEbhIOh4gR3q9xSe/BH54q/G2wn74ZisetGZX++hbb9xzzyKB9GcCOPTIgJxU6zGLhk3vHG2d8kfyfLQ9t+38TYIN8WyQRIUDgIOB8bkoySNmwY/qOolTnpbqof6epaHtin2cikTxCgKB0FHu/xyUyz7syewQToniCeOHPKfpKivvAh9Er9Ur98T42E/Etuqh/rpLA9trxv3zKNwENMoE+Qcy+x6Egy2EXh4imeqhyX2G/c7UT3Ub2Z5aNtiL5fin5b92W2QXGwQBDl26uJpCpKT7B3c9MQM991VPSy/s1keHsoCe7kUDmIaNohp2CCmoQ9C8lJXbDQk3vP0m0rsi9oIUePpN3XvlbiNhPN4XUvGQ3IxCnHVxdO3MkyVyjXBKXDvwNYA3AAAAABJRU5ErkJggg=="height="18"
+                        width="18"> -->
+                      
+                      </span></a></li>
+                      <li  role="presentation" >
+                        <div  id="rangeCal" style="display:none;" class="col-md-12 demo">
+                        <input  type="text" style="height:auto; padding:0px 12px; font-size: 13px;" name="rangevalue" value="" class="form-control py-1 config-demo">
+                        </div>
+            
+                    </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-2 text-right">
+                    <a id="reset" (click)="reloadContent();" href="javascript:void(0)" style="font-weight: bold; color:#6a6a6a; text-decoration:underline; display:none;"><i class="fas fa-sync-alt"></i> &nbsp;<span id="searchkey"></span></a>
+                    </div>
+                </div>
+              </div>
+            <!--dash header end-->
+            
+              <!-- Body -->
+                <div class="container-fluid h-100 d-flex flex-column">
+                  <div class="row h-100 d-flex">
+                    <div class="col-md-8">
+                      <div class="row d-flex customh-50">
+                        <div class="col-md-6 d-flex flex-column h-100">
+                          <div class="widget">
+                            <div class="widget-head">
+                              <span class="widget-icon"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.488" height="16" viewBox="0 0 24.488 16">
+                                    <path id="Forma_1" data-name="Forma 1" d="M34.26,92.75a1.616,1.616,0,0,0-1.632,1.6v.506l-12.666,3.9a1.427,1.427,0,0,0-2.838.18v3.592a1.427,1.427,0,0,0,2.838.18l.871.268a1.33,1.33,0,0,0-.3.492,1.352,1.352,0,0,0,.893,1.709l4.657,1.476h0a1.412,1.412,0,0,0,.426.066,1.387,1.387,0,0,0,1.321-.939,1.313,1.313,0,0,0,.044-.632l4.75,1.465v.508a1.632,1.632,0,1,0,3.264,0V94.346A1.616,1.616,0,0,0,34.26,92.75Zm-7.2,12.784a.574.574,0,0,1-.719.36l-4.657-1.476a.557.557,0,0,1-.368-.7.575.575,0,0,1,.719-.359l4.658,1.476a.557.557,0,0,1,.367.7Zm-7.894-3.006a.612.612,0,0,1-1.224,0V98.936a.612.612,0,0,1,1.224,0Zm.816-.652V99.588l12.647-3.9v10.087Zm15.1,5.242a.816.816,0,1,1-1.632,0V94.346a.816.816,0,1,1,1.632,0Zm4.488-6.785h-.408a.4.4,0,1,0,0,.8h.408a.4.4,0,1,0,0-.8Zm-2.04.8h.408a.4.4,0,1,0,0-.8h-.408a.4.4,0,1,0,0,.8Zm3.672-.8h-.408a.4.4,0,1,0,0,.8H41.2a.4.4,0,1,0,0-.8Zm-2.519-4.975a.412.412,0,0,0,.289-.117l.289-.284a.392.392,0,0,0,0-.568.414.414,0,0,0-.577,0l-.289.284a.392.392,0,0,0,0,.568.412.412,0,0,0,.288.117Zm1.154-1.129a.412.412,0,0,0,.289-.117l.289-.284a.392.392,0,0,0,0-.568.414.414,0,0,0-.577,0l-.288.284a.392.392,0,0,0,0,.568.412.412,0,0,0,.288.116Zm-2.308,2.258a.412.412,0,0,0,.289-.117l.289-.284a.392.392,0,0,0,0-.568.414.414,0,0,0-.577,0l-.289.284a.392.392,0,0,0,0,.568.409.409,0,0,0,.289.116Zm.258,1.49-.387.126a.4.4,0,0,0-.258.505.407.407,0,0,0,.387.273.426.426,0,0,0,.129-.021l.387-.126a.4.4,0,0,0,.258-.505.409.409,0,0,0-.515-.251Zm1.291.4a.408.408,0,0,0,.129-.021l.387-.126a.4.4,0,0,0,.258-.5.409.409,0,0,0-.516-.252l-.387.126a.4.4,0,0,0-.258.5.408.408,0,0,0,.387.273Zm1.162-.78a.407.407,0,0,0,.387.273.426.426,0,0,0,.128-.021l.387-.126a.4.4,0,0,0,.259-.505.412.412,0,0,0-.518-.246l-.387.126a.4.4,0,0,0-.256.5Zm-.113,9.756a.414.414,0,0,0-.577,0,.392.392,0,0,0,0,.568l.288.284a.414.414,0,0,0,.577,0,.393.393,0,0,0,0-.568Zm-1.154-1.13a.414.414,0,0,0-.577,0,.393.393,0,0,0,0,.568l.289.284a.414.414,0,0,0,.577,0,.392.392,0,0,0,0-.568Zm-1.154-1.128a.414.414,0,0,0-.577,0,.392.392,0,0,0,0,.568l.289.284a.416.416,0,0,0,.577,0,.393.393,0,0,0,0-.568Zm1.131-1.23.387.126a.426.426,0,0,0,.129.021.407.407,0,0,0,.387-.273.4.4,0,0,0-.258-.5l-.387-.126a.409.409,0,0,0-.516.253.4.4,0,0,0,.258.5Zm-.9-1.135-.387-.126a.409.409,0,0,0-.516.252.4.4,0,0,0,.258.505l.387.126a.411.411,0,0,0,.516-.253.4.4,0,0,0-.259-.5Zm3.1,1.009-.387-.126a.41.41,0,0,0-.516.253.4.4,0,0,0,.258.505l.387.126a.426.426,0,0,0,.128.021.407.407,0,0,0,.387-.274.4.4,0,0,0-.258-.5Z" transform="translate(-17.124 -92.75)" fill-rule="evenodd"/>
+                                  </svg>
+
+                              </span>
+                              Share of Voice
+                            </div>
+                            
+                              <div class="flex-box">
+                                <div class="chart d-flex h-100 flex-scroll widget-content">
+                                  <!--Content Here-->
+                                      <div [chart]="chart" style="width: 100%;"></div>
+                                  
+                                  
+                                </div>
+                              </div>
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column h-100">
+                          <div class="widget">
+                            <div class="widget-head">
+                              <span class="widget-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.003" height="16" viewBox="0 0 16.003 16">
+                                  <path id="Forma_1" data-name="Forma 1" d="M502.16,108.741H487.1a.469.469,0,0,1,0-.938H502.16a.469.469,0,1,1,0,.938Zm-3.311-1.562h-2.5a1.407,1.407,0,0,1-1.406-1.406v-10a1.407,1.407,0,0,1,1.406-1.406h2.5a1.407,1.407,0,0,1,1.406,1.406v10a1.407,1.407,0,0,1-1.409,1.406Zm.468-11.4a.469.469,0,0,0-.468-.468h-2.5a.469.469,0,0,0-.468.468v10a.469.469,0,0,0,.468.468h2.5a.469.469,0,0,0,.468-.468v-10Zm-6.4,11.4h-2.5a1.407,1.407,0,0,1-1.406-1.406V94.147a1.407,1.407,0,0,1,1.406-1.406h2.5a1.407,1.407,0,0,1,1.406,1.406v11.625a1.407,1.407,0,0,1-1.409,1.408Zm.468-13.029a.469.469,0,0,0-.468-.468h-2.5a.469.469,0,0,0-.468.468v11.625a.469.469,0,0,0,.468.468h2.5a.469.469,0,0,0,.468-.468Z" transform="translate(-486.644 -92.741)" fill="#262626" fill-rule="evenodd"/>
+                                </svg>
+
+                              </span>
+                              In Headlines
+                            </div>
+                            <div class="chart d-flex h-100" style="overflow: auto;">
+                              <div class="flex-box">
+                                <div class="chart d-flex h-100 flex-scroll widget-content">
+                                  
+                                  <ul>
+                                    <li *ngFor="let headline of headlinearray">
+                                    <!-- {{headline[1]}}
+                                    {{headline[0]}} -->
+
+                                      <a *ngIf ="headline[1] >=100" [style.font-size.px]="30"  title="{{headline[1]}}" href="javascript:void(0)" class="blue" (click)="getArticleByWord(headline[0]);">{{headline[0]}}</a> 
+                                     
+                                      <a *ngIf ="headline[1] >=70 && headline[1] <= 99" [style.font-size.px]="25"  title="{{headline[1]}}" href="javascript:void(0)" class="blue" (click)="getArticleByWord(headline[0]);">{{headline[0]}}</a> 
+
+                                      <a *ngIf ="headline[1] >=40 && headline[1] <= 69" [style.font-size.px]="25"  title="{{headline[1]}}" href="javascript:void(0)" class="blue" (click)="getArticleByWord(headline[0]);">{{headline[0]}}</a> 
+                                      <a *ngIf ="headline[1] >=30 && headline[1] <= 39" [style.font-size.px]="20"  title="{{headline[1]}}" href="javascript:void(0)" class="blue" (click)="getArticleByWord(headline[0]);">{{headline[0]}}</a> 
+                                      <a *ngIf ="headline[0] >=20 && headline[1] <= 29" [style.font-size.px]="18"  title="{{headline[1]}}" href="javascript:void(0)" class="blue" (click)="getArticleByWord(headline[0]);">{{hheadline[0]}}</a>
+                                      <a *ngIf ="headline[1] >=1 && headline[1] <= 19" [style.font-size.px]="15"  title="{{headline[1]}}" href="javascript:void(0)" class="blue" (click)="getArticleByWord(headline[0]);">{{headline[0]}}</a> 
+
+                                    </li>
+                                  </ul>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row d-flex customh-50">
+                        <div class="col-md-6 d-flex flex-column h-100">
+                          <div class="widget">
+                            <div class="widget-head">
+                              <span class="widget-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13.002" height="16" viewBox="0 0 13.002 16">
+                                  <path id="Path_1" data-name="Path 1" d="M26.225,474.458a1.729,1.729,0,1,0-1.685-1.729,1.71,1.71,0,0,0,1.685,1.729Zm0-2.545a.817.817,0,1,1-.8.816.807.807,0,0,1,.8-.816Zm3.456,6.661h-.953v-1.667a2.063,2.063,0,0,0-2.034-2.086h-.937a2.063,2.063,0,0,0-2.034,2.086v1.667H20.4v-.44l1.878.055H22.3a.441.441,0,0,0,.31-.129.463.463,0,0,0,.133-.327v-2.8a.463.463,0,0,0-.133-.327.44.44,0,0,0-.323-.129l-4.671.137a.451.451,0,0,0-.432.456V477.6a.451.451,0,0,0,.432.456l1.9.056v.467H17.568a.451.451,0,0,0-.445.457v1.436a.451.451,0,0,0,.445.456h.211v5.62a.451.451,0,0,0,.445.457h10.8a.451.451,0,0,0,.445-.457v-5.62h.211a.451.451,0,0,0,.445-.456V479.03a.451.451,0,0,0-.444-.456Zm-11.612-3.067,3.781-.111v1.861l-3.781-.111v-1.64h0Zm.6,5.414H28.58v5.164H18.67v-5.164Zm10.567-1.437v.525H18.013v-.525ZM24.613,476.9a1.16,1.16,0,0,1,1.144-1.173h.937a1.16,1.16,0,0,1,1.144,1.173v1.667H24.613V476.9Z" transform="translate(-17.123 -471)" fill="#262626" fill-rule="evenodd"/>
+                                </svg>
+
+                              </span> Company
+                            </div>
+                            <div class="chart d-flex h-100" style="overflow: auto;">
+                              <div class="flex-box" style="bottom:10px;">
+                                <div class="chart d-flex h-100 flex-scroll widget-content">
+                                   
+
+                                  <ul>
+                                    <li *ngFor="let companyarr of companydataarray">
+                                    <a *ngIf ="companyarr.keytpe=='My Competitor Keyword' && companyarr.totalcount>=50 && matchString(companyarr.companys)==false" [style.font-size.px]="25" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="red" (click)="getArticleByCompany(companyarr.companys);">
+                                      {{companyarr.companys}}
+                                    </a> 
+
+                                    <a *ngIf ="companyarr.keytpe=='My Competitor Keyword' && companyarr.totalcount >=30 && companyarr.totalcount <= 49 && matchString(companyarr.companys)==false" [style.font-size.px]="20" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="red" (click)="getArticleByCompany(companyarr.companys);">
+                                      {{companyarr.companys}}
+                                    </a> 
+
+                                    <a *ngIf ="companyarr.keytpe=='My Competitor Keyword' && companyarr.totalcount >=1 && companyarr.totalcount <= 29 && matchString(companyarr.companys)==false" [style.font-size.px]="15" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="red" (click)="getArticleByCompany(companyarr.companys);">
+                                      {{companyarr.companys}}
+                                    </a> 
+
+
+                                    <a *ngIf ="companyarr.keytpe=='My Company Keyword' && companyarr.totalcount>=50 && matchString(companyarr.companys)==false" [style.font-size.px]="25" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="green" (click)="getArticleByCompany(companyarr.companys);">
+                                        {{companyarr.companys}}
+                                      </a>
+
+
+
+                                      <a *ngIf ="companyarr.keytpe=='My Company Keyword' && companyarr.totalcount >=30 && companyarr.totalcount <= 49 && matchString(companyarr.companys)==false" [style.font-size.px]="20" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="green" (click)="getArticleByCompany(companyarr.companys);">
+                                        {{companyarr.companys}}
+                                      </a>
+
+
+
+                                      <a *ngIf ="companyarr.keytpe=='My Company Keyword' && companyarr.totalcount >=1 && companyarr.totalcount <= 29 && matchString(companyarr.companys)==false" [style.font-size.px]="15" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="green" (click)="getArticleByCompany(companyarr.companys);">
+                                        {{companyarr.companys}}
+                                      </a>
+
+                                      <a *ngIf ="companyarr.keytpe=='My Industry Keyword' && companyarr.totalcount>=50 && matchString(companyarr.companys)==false" [style.font-size.px]="25" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="blue" (click)="getArticleByCompany(companyarr.companys);">
+                                          {{companyarr.companys}}
+                                        </a>
+
+                                        <a *ngIf ="companyarr.keytpe=='My Industry Keyword' && companyarr.totalcount >=30 && companyarr.totalcount <= 49 && matchString(companyarr.companys)==false" [style.font-size.px]="20" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="blue" (click)="getArticleByCompany(companyarr.companys);">
+                                          {{companyarr.companys}}
+                                        </a>
+
+                                        <a *ngIf ="companyarr.keytpe=='My Industry Keyword' && companyarr.totalcount >=1 && companyarr.totalcount <= 29 && matchString(companyarr.companys)==false" [style.font-size.px]="15" title="{{companyarr.totalcount}}" href="javascript:void(0)" class="blue" (click)="getArticleByCompany(companyarr.companys);">
+                                          {{companyarr.companys}}
+                                        </a>
+
+                                  </li>
+                                </ul>        
+                                  
+
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+                        <!--<div class="col-md-3 d-flex flex-column h-100">
+                          <div class="widget">
+                            <div class="widget-head">
+                              <span class="widget-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.998" height="16" viewBox="0 0 15.998 16">
+                                  <path id="Forma_1" data-name="Forma 1" d="M264.629,472.492a1.866,1.866,0,1,0-2.51,0,2.4,2.4,0,0,0-1.945,2.355v1.067a.267.267,0,0,0,.267.267h5.866a.267.267,0,0,0,.267-.267v-1.067a2.4,2.4,0,0,0-1.945-2.355Zm-2.588-1.38a1.333,1.333,0,1,1,1.333,1.333,1.333,1.333,0,0,1-1.333-1.333Zm4,4.533h-5.333v-.8a1.868,1.868,0,0,1,1.866-1.867h1.6a1.869,1.869,0,0,1,1.867,1.867Zm-6.211,5.911a1.866,1.866,0,1,0-2.51,0,2.4,2.4,0,0,0-1.945,2.355v1.067a.267.267,0,0,0,.267.267h5.866a.267.267,0,0,0,.267-.267V483.91a2.4,2.4,0,0,0-1.945-2.353Zm-2.588-1.38a1.331,1.331,0,1,1,0,.005Zm4,4.533h-5.333v-.8a1.868,1.868,0,0,1,1.867-1.866h1.6a1.869,1.869,0,0,1,1.866,1.866v.8Zm8.187-3.155a1.866,1.866,0,1,0-2.51,0,2.4,2.4,0,0,0-1.945,2.355v1.067a.267.267,0,0,0,.267.267h5.866a.267.267,0,0,0,.267-.267v-1.067a2.4,2.4,0,0,0-1.945-2.35Zm-2.588-1.38a1.335,1.335,0,1,1,0,.008Zm4,4.533h-5.333v-.8a1.868,1.868,0,0,1,1.867-1.866h1.6a1.869,1.869,0,0,1,1.866,1.866v.807Zm-13.86-6.941-.533.021c.007.183.022.37.044.553l.53-.063c-.021-.162-.034-.334-.041-.5Zm-.489-1.085c-.021.182-.036.368-.043.553l.533.021c.007-.171.02-.342.04-.51Zm2.681-4.687c-.146.111-.29.23-.428.354l.356.4c.125-.114.26-.224.395-.327Zm-2.07,2.563c-.078.167-.151.339-.216.511l.5.188c.063-.159.125-.317.2-.471Zm-.391,1.038c-.051.176-.095.358-.131.538l.523.105c.033-.166.074-.334.121-.5Zm1.638-2.86c-.125.134-.251.275-.365.417l.415.336c.106-.131.22-.261.338-.385Zm1.757-1.34c-.162.086-.322.181-.479.282l.289.448c.144-.093.292-.18.439-.259Zm-2.456,2.208c-.1.152-.2.31-.295.47l.462.265c.085-.147.176-.293.272-.433Zm4.46,10.188-.105.523c.18.036.365.063.548.087l.063-.53c-.169-.02-.339-.047-.5-.08Zm2.543,0c-.165.034-.335.063-.505.082l.063.53c.184-.023.368-.053.547-.089Zm-1.015.122c-.171.007-.343.008-.512,0l-.021.533c.089,0,.179.005.269.005s.188,0,.285-.006ZM268,472.358l-.356.4c.125.114.251.234.366.357l.387-.367c-.125-.136-.259-.266-.4-.391Zm.763.8-.415.335c.107.132.21.27.306.411l.439-.3c-.1-.156-.217-.3-.329-.447Zm1.533,4.078-.533.021c0,.084.005.169.005.251s0,.173-.005.259l.533.021q.006-.139.006-.28c0-.089,0-.18,0-.271Zm-.907-3.168-.463.265c.085.147.164.3.237.454l.482-.228c-.079-.166-.163-.331-.255-.491Zm.472,1-.5.188c.063.159.114.322.161.486l.513-.147a5.5,5.5,0,0,0-.17-.528Zm.3,1.067-.523.1c.034.167.063.338.081.506l.529-.063c-.021-.185-.05-.369-.087-.55Zm-3.046-4.46-.289.449c.142.092.284.188.419.294l.324-.424C267.432,471.888,267.28,471.782,267.123,471.682Zm-.976-.523-.214.488c.156.068.314.143.461.224l.251-.47a5.145,5.145,0,0,0-.5-.24Z" transform="translate(-255.375 -469.244)" fill="#262626" fill-rule="evenodd"/>
+                                </svg>
+
+                              </span>
+                              People
+                            </div>
+                            <div class="chart d-flex h-100" style="overflow: auto;">
+                              <div class="flex-box">
+                                <div class="chart d-flex h-100 flex-scroll widget-content">
+                                  <ul>
+                                    <li>
+                                      <a href="#" class="green"></a> 
+                                    </li>
+                                    <li>
+                                      <a href="#" class="red"></a>  
+                                    </li>
+                                    <li>
+                                      <a href="#" class="blue"></a> 
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>-->
+
+
+
+
+
+
+                        <div class="col-md-3 d-flex flex-column h-100">
+                          <div class="widget">
+                            <div class="widget-head">
+                              <span class="widget-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                  <path id="Forma_1" data-name="Forma 1" d="M508.25,471h-11a1.5,1.5,0,0,0-1.5,1.5v1h-.5a1.5,1.5,0,0,0-1.5,1.5v10a2,2,0,0,0,2,2h12a2,2,0,0,0,2-2V472.5A1.5,1.5,0,0,0,508.25,471Zm.5,14a1,1,0,0,1-1,1h-12a1,1,0,0,1-1-1V475a.5.5,0,0,1,.5-.5h.5v10a.5.5,0,0,0,1,0v-12a.5.5,0,0,1,.5-.5h11a.5.5,0,0,1,.5.5Zm-5.251-7.5h4a.25.25,0,1,0,0-.5h-4a.25.25,0,0,0,0,.5Zm0-1.5h4a.25.25,0,1,0,0-.5h-4a.25.25,0,1,0,0,.5Zm0-1.5h4a.25.25,0,1,0,0-.5h-4a.25.25,0,0,0,0,.5Zm-1.5,10h-4a.25.25,0,0,0,0,.5h4a.25.25,0,1,0,0-.5Zm0-1.5h-4a.25.25,0,0,0,0,.5h4a.251.251,0,1,0,0-.5Zm0-1.5h-4a.25.25,0,0,0,0,.5h4a.25.25,0,1,0,0-.5Zm5.5,3h-4a.25.25,0,0,0,0,.5h4a.25.25,0,1,0,0-.5Zm0-1.5h-4a.25.25,0,0,0,0,.5h4a.251.251,0,1,0,0-.5Zm0-1.5h-4a.25.25,0,0,0,0,.5h4a.25.25,0,1,0,0-.5Zm0-3H498a.25.25,0,0,0,0,.5h9.5a.25.25,0,1,0,0-.5Zm0,1.5H498a.25.25,0,0,0,0,.5h9.5a.251.251,0,1,0,0-.5Zm-9.25-2.5h3.5a.5.5,0,0,0,.5-.5v-3.5a.5.5,0,0,0-.5-.5h-3.5a.5.5,0,0,0-.5.5V477a.5.5,0,0,0,.5.5Zm.5-3.5h2.5v2.5h-2.5Z" transform="translate(-493.75 -471)" fill="#262626" fill-rule="evenodd"/>
+                                </svg>
+                              </span>
+                              News Source
+                            </div>
+                            <div class="chart d-flex h-100" style="overflow: auto;">
+                              <div class="flex-box" style="bottom:10px;">
+                                <div class="chart d-flex h-100 flex-scroll widget-content">
+                                  <ul><li *ngFor="let au of publicationarray">
+
+                                      <a *ngIf ="au.totalcount >=50" [style.font-size.px]="30" title="{{au.totalcount}}" href="javascript:void(0)" (click)="getArticleByPublication(au.publication);" class="blue">{{au.publication}}</a> 
+                                      <a *ngIf ="au.totalcount >=30 && au.totalcount <= 49" [style.font-size.px]="25" title="{{au.totalcount}}" href="javascript:void(0)" (click)="getArticleByPublication(au.publication);" class="blue">{{au.publication}}</a> 
+                                      <a *ngIf ="au.totalcount >=1 && au.totalcount <= 29" [style.font-size.px]="20" title="{{au.totalcount}}" href="javascript:void(0)" (click)="getArticleByPublication(au.publication);" class="blue">{{au.publication}}</a> 
+
+                                    </li></ul>
+                                
+
+
+
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column h-100">
+                          <div class="widget">
+                            <div class="widget-head">
+                              <span class="widget-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.503" height="16" viewBox="0 0 20.503 16">
+                                  <path id="Forma_1" data-name="Forma 1" d="M750.977,484.2H733.106a.7.7,0,0,1-.71-.655.691.691,0,0,1,.69-.725h4.752s.237,0,.261-.006l4.088-1.259a.26.26,0,0,0,.107-.067l6.661-6.646A2.253,2.253,0,0,0,747.382,471a2.312,2.312,0,0,0-1.647.687l-6.634,6.618a.26.26,0,0,0-.067.107l-1.2,3.89h-4.72a1.227,1.227,0,0,0-1.237,1.172,1.211,1.211,0,0,0,1.211,1.246h17.871a.9.9,0,0,1,.9.846.882.882,0,0,1-.881.914H737.82a.259.259,0,1,0,0,.519h13.129a1.423,1.423,0,0,0,1.43-1.423,1.4,1.4,0,0,0-1.4-1.374Zm-3.618-12.683a1.734,1.734,0,0,1,1.3,2.889,2.253,2.253,0,0,0-2.453-2.449,1.728,1.728,0,0,1,1.16-.439Zm.278,1.457a1.734,1.734,0,0,1,0,2.452l-5.316,5.3a3.045,3.045,0,0,0-2.467-2.447l5.321-5.309a1.742,1.742,0,0,1,2.462,0Zm-8.164,5.787a2.476,2.476,0,0,1,2.371,2.357l-1.638.5a1.66,1.66,0,0,0-1.238-1.228Zm-.659,2.131a1.126,1.126,0,0,1,.895.884l-1.291.4Z" transform="translate(-731.876 -471)" fill="#262626" fill-rule="evenodd"/>
+                                </svg>
+
+                              </span>
+                              Authors
+                            </div>
+                            <div class="chart d-flex h-100" style="overflow: auto;">
+                              <div class="flex-box" style="bottom:10px;">
+                                <div class="chart d-flex h-100 flex-scroll widget-content">
+                                  <ul>
+                                    <li *ngFor="let jour of jourdataarray">
+                                    
+                                   
+                                      <a *ngIf ="jour.totalcount >=50" [style.font-size.px]="30"  title="{{jour.totalcount}}" href="javascript:void(0)" (click)="getArticleByAuthor(jour.journalist);" class="blue">{{jour.journalist}}</a> 
+
+                                      <a  *ngIf ="jour.totalcount >=30 && jour.totalcount <= 49" [style.font-size.px]="25" title="{{jour.totalcount}}" href="javascript:void(0)" (click)="getArticleByAuthor(jour.journalist);" class="blue">{{jour.journalist	}}</a>
+
+                                      <a *ngIf ="jour.totalcount >=1 && jour.totalcount <= 29" [style.font-size.px]="20" title="{{jour.totalcount}}" href="javascript:void(0)" (click)="getArticleByAuthor(jour.journalist);" class="blue">{{jour.journalist}}</a>
+                                  </li>
+                                </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column h-100 pb-4">
+                      <div class="row" style="margin: 0; ">
+                        <div class="col-md-6 pl-0">
+                          <div class="dropdown clean-dropdown">
+                            <span class="widget-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="15.454" height="16" viewBox="0 0 15.454 16">
+                                <path id="Forma_1" data-name="Forma 1" d="M978.97,89.634h-1.379a.256.256,0,0,0,0,.511h.478a1.049,1.049,0,0,0-.152.544v12.073a.256.256,0,0,0,.511,0V90.69a.545.545,0,1,1,1.09,0v12.073a1.345,1.345,0,0,1-2.69,0V88.868a.256.256,0,0,0-.256-.255H964.828a.255.255,0,0,0-.255.255V102.76a1.857,1.857,0,0,0,1.856,1.853H978.17a1.858,1.858,0,0,0,1.856-1.853V90.687A1.057,1.057,0,0,0,978.97,89.634Zm-12.541,14.471a1.347,1.347,0,0,1-1.345-1.345V89.123h11.23V102.76a1.853,1.853,0,0,0,.578,1.345H966.429Zm8.777-14.13H966.19a.255.255,0,0,0-.255.255v2.554a.255.255,0,0,0,.255.255h9.016a.256.256,0,0,0,.256-.255V90.23a.256.256,0,0,0-.256-.256Zm-.255,2.554h-8.5V90.486h8.5v2.043Zm.255,1.021H966.19a.256.256,0,0,0,0,.511h9.016a.256.256,0,0,0,0-.512Zm0,2.043h-4a.255.255,0,0,0,0,.51h4a.256.256,0,0,0,0-.511Zm-5.021,0h-4a.255.255,0,0,0,0,.51h4a.256.256,0,1,0,0-.511Zm5.021,1.021h-4a.256.256,0,0,0,0,.511h4a.256.256,0,0,0,0-.512Zm-5.021,0h-4a.256.256,0,0,0,0,.511h4a.256.256,0,0,0,0-.512Zm5.021,1.021h-4a.256.256,0,0,0,0,.511h4a.256.256,0,0,0,0-.512Zm0,1.021h-4a.256.256,0,0,0,0,.511h4a.256.256,0,0,0,0-.512Zm-4,1.532h2.634a.256.256,0,1,0,0-.511h-2.634a.256.256,0,0,0,0,.51Zm2.634,2.553h-2.634a.256.256,0,0,0,0,.511h2.634a.256.256,0,0,0,0-.512Zm1.363-1.021h-4a.256.256,0,0,0,0,.511h4a.256.256,0,0,0,0-.512Zm-5.021-4.086h-4a.255.255,0,0,0-.255.255V103a.255.255,0,0,0,.255.255h4a.256.256,0,0,0,.256-.255V97.891a.256.256,0,0,0-.254-.256Zm-.255,5.107h-3.486v-4.6h3.486v4.6Z" transform="translate(-964.573 -88.613)" fill="#262626" fill-rule="evenodd"/>
+                              </svg>
+
+                            </span>
+                            <button class="btn btn-secondary dropdown-toggle pl-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="text-transform: capitalize;" id="dropdownNewsItem">All News</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyType('')">All News</a>
+                            <a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyType('print')">Print </a>
+                            <a style="cursor: pointer; font-size:13px; text-indent:13px;" class="dropdown-item"  *ngFor="let edition of clientedition" (click)="getArticlebyType(edition._id)">{{edition._id}}</a>
+                            <a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyType('web')">Web </a>
+                            
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-6 pr-0">
+                          <div class="float-right artical-count">
+                            {{totalcount}} Articles
+                          </div>
+                        </div>
+                      </div>
+                      <div style="position: absolute; top: 44px; right: 15px; bottom: 10px; left: 15px; display: flex;">
+                      <div class="chart d-flex h-100" style="overflow: auto; min-height: 0;">
+
+
+                        <div style="overflow: scroll; flex: none;" class="article-list px-3 w-100" 
+                        infinite-scroll
+                        [infiniteScrollDistance]="2"
+                        [infiniteScrollUpDistance]="1.5"
+                        [infiniteScrollThrottle]="150"
+                        [scrollWindow]="false"
+                        (scrolled)="onScrollDown()">
+                        
+
+                              <ul *ngFor="let data of result"> 
+                                  <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+                                <li>
+                                  <!-- <a [attr.href]="helper.getPrintUrl(data.articleid)" >{{data.headline}}</a>  -->
+
+                                  <!-- <a >{{data.headline}}</a> -->
+                                  
+                                  <a *ngIf ="data.type=='WEB'" target="_blank" [attr.href]="data.url">{{data.headline}}</a>
+                                  <a *ngIf ="data.type=='TWITTER'" target="_blank" [attr.href]="data.url">{{data.headline}}</a>
+                <a *ngIf ="data.type=='PRINT'" target="_blank" [attr.href]="helper.getPrintUrl(data.articleid,data.clientid,user.email)" >{{data.headline}}</a>
+                                  
+                                  <br>
+                                  <span class="article-info">{{data.publication}}, {{data.city}}  {{data.pubdate | date : 'd MMM'}}</span>
+                                  <div class="article-check">
+                                    <!-- <span class="checkbox-input showcase">
+                                      <input id="{{data.articleid}}" name="check" type="checkbox">
+                                      <label for="{{data.articleid}}"></label>
+                                    </span> -->
+                                  </div>
+                                </li>
+                                
+                              </ul>
+                              <div *ngIf = "!notscrolly" class="row pb-5">
+                                <div class="col-md-12 d-flex justify-content-center">
+                                  <div class="text-muted h6 alert alert-secondary p-2">Loading......</div>
+                                </div>
+                              </div>
+
+                              <!-- Alert no more post -->
+                              <div *ngIf = "!notEmptyPost" class="row pb-5">
+                                <div class="col-md-12 d-flex justify-content-center">
+                                  <div class="text-muted h6 alert alert-secondary p-2">No more items to show</div>
+                                </div>
+                              </div>
+                            </div>
+
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- Body End -->
+            
+          </div>
+          
+          <!-- Dash End -->
+          
+          
+          
+          
+                            </div>
+                    </div>
+                    </div>
+              <!--table comes here--> 
+            </div>
+                 
+                </div>
+        </div>
+              
+            </div>
+    </div>
+        </div>
+</div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="mailmodal" tabindex="-1" role="dialog" aria-labelledby="mailmodallabel" aria-hidden="true">
+<div class="modal-dialog" role="document" style="width: 70vw; max-width: 70vw;">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="mailmodallabel">Send Mail</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" style="max-height: 50vh; overflow-y: auto;">
+  <div class="list-group">
+<!--Item Body-->
+<div class="list-group-item list-group-item-action flex-column align-items-start">
+<div class="d-flex w-100 justify-content-between">
+  <a href="#" class="mb-1 modal-link">A day after fall, markets back in time A day after fall, markets back in time </a>
+</div>
+<p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+<small style="color: #A0A0A0;">10 Dec, 2018 </small>
+</div>
+<!--Item Body End-->
+<!--Item Body-->
+<div class="list-group-item list-group-item-action flex-column align-items-start">
+<div class="d-flex w-100 justify-content-between">
+  <a href="#" class="mb-1 modal-link">A day after fall, markets back in time A day after fall, markets back in time </a>
+</div>
+<p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+<small style="color: #A0A0A0;">10 Dec, 2018 </small>
+</div>
+<!--Item Body End-->
+<!--Item Body-->
+<div class="list-group-item list-group-item-action flex-column align-items-start">
+<div class="d-flex w-100 justify-content-between">
+  <a href="#" class="mb-1 modal-link">A day after fall, markets back in time A day after fall, markets back in time </a>
+</div>
+<p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+<small style="color: #A0A0A0;">10 Dec, 2018 </small>
+</div>
+<!--Item Body End-->
+<!--Item Body-->
+<div class="list-group-item list-group-item-action flex-column align-items-start">
+<div class="d-flex w-100 justify-content-between">
+  <a href="#" class="mb-1 modal-link">A day after fall, markets back in time A day after fall, markets back in time </a>
+</div>
+<p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+<small style="color: #A0A0A0;">10 Dec, 2018 </small>
+</div>
+<!--Item Body End-->
+<!--Item Body-->
+<div class="list-group-item list-group-item-action flex-column align-items-start">
+<div class="d-flex w-100 justify-content-between">
+  <a href="#" class="mb-1 modal-link">A day after fall, markets back in time A day after fall, markets back in time </a>
+</div>
+<p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+<small style="color: #A0A0A0;">10 Dec, 2018 </small>
+</div>
+<!--Item Body End-->
+<!--Item Body-->
+<div class="list-group-item list-group-item-action flex-column align-items-start">
+<div class="d-flex w-100 justify-content-between">
+  <a href="#" class="mb-1 modal-link">A day after fall, markets back in time A day after fall, markets back in time </a>
+</div>
+<p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+<small style="color: #A0A0A0;">10 Dec, 2018 </small>
+</div>
+<!--Item Body End-->
+</div>
+</div>
+<div style="border-top: 1px solid #e9ecef;">
+<div class="container-fluid" >
+<div class="row mt-3">
+  <div class="col-md-12">
+      <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-1 col-form-label">Email</label>
+      <div class="col-sm-11">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      </div>
+      </div>
+    <div class="form-group row">
+      <label class="col-sm-1 col-form-label">Comment</label>
+      <div class="col-sm-11"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="modal-footer border-0">		  
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,41 @@
+
+*** These modified files were found in JOE when it aborted on Thu Apr 25 19:43:32 2019
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+getarticles
+getarticle
+50
+skip
+query
+skip
+getarticle
+articlepost
+find
+sort
+sort
+
+*** File '(Unnamed)'
+ArticleModel1.js
+articleController.js
+db.js
+articleController.js
+articleController.js
+../model/ArticleModel1.js
+ArticleModel1.js
+/etc/mongod.conf
+app.js
+app.js
+articleController.js
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
+
+*** These modified files were found in JOE when it aborted on Mon May  6 17:05:43 2019
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Thu Dec 26 11:22:10 2019
+*** JOE was aborted because the terminal closed

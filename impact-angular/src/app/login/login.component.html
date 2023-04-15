@@ -1,0 +1,93 @@
+<!--<div class="login-page">
+  <div class="form">
+          <input type="text" class="form-control rounded-0" [(ngModel)]="loginuserdata.email" placeholder="email" name="email" style="height:unset; letter-spacing:unset;" required />
+          <input type="password" required [(ngModel)]="loginuserdata.password" placeholder="password" style="height:unset; letter-spacing:unset;"/>
+          <button (click)="loginuser()">login</button>
+  </div>
+</div>-->
+
+<div class="d-flex h-100">
+	<!-- Left Content -->
+	<div class="align-items-center justify-content-center flex-column p-2 loginleftbg">
+		<div class="txt1">Impact adds value to your news</div>
+		<div class="txt2">Media intelligence that you may desire</div>
+	</div>
+	<!-- Left Content End -->
+	<div class="p-2 bg-white loginform align-items-center ">
+		<div class="d-flex justify-content-center w-100">
+			<div class="col-md-8 mx-auto">
+				<div class="text-center py-4"><img src="assets/images/login-mpactlogo.png"></div>
+				<div class="card rounded-0" style="background:transparent; border: none;">
+			<div class="card-header text-center" style="background-color: transparent; border: none;">
+				<h3 class="mb-0" style="background-color: transparent; font-size: 28px; font-weight:700;">Login</h3>
+			</div>
+			<div class="card-body px-0">
+				<!-- <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST"> -->
+					<div class="form-group" style="position: relative;">
+						<div class="loginmailicon">
+							
+							<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 485.411 485.411" style="enable-background:new 0 0 485.411 485.411;" width="22px" height="22px" xml:space="preserve">
+								<g>
+									<path style="fill:#010002;" d="M0,81.824v321.763h485.411V81.824H0z M242.708,280.526L43.612,105.691h398.187L242.708,280.526z
+										 M163.397,242.649L23.867,365.178V120.119L163.397,242.649z M181.482,258.533l61.22,53.762l61.22-53.762L441.924,379.72H43.487
+										L181.482,258.533z M322.008,242.655l139.535-122.536v245.059L322.008,242.655z"/>
+								</g>
+							</svg>
+						</div>
+						<input type="text" [(ngModel)]="loginuserdata.email" class="form-control form-control-lg rounded-0 logintxtbox" name="email" placeholder="Email" required="">
+						<!-- <span class="loginerrortxt">invalid Email ID</span> -->
+					</div>
+					<div class="form-group mt-3" style="position: relative;">
+						<div class="loginpasswordicon">
+							
+							<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" width="22px" height="22px" xml:space="preserve">
+							<g>
+								<g>
+									<g>
+										<path d="M230.792,354.313l-6.729,60.51c-0.333,3.01,0.635,6.031,2.656,8.292c2.021,2.26,4.917,3.552,7.948,3.552h42.667
+											c3.031,0,5.927-1.292,7.948-3.552c2.021-2.26,2.99-5.281,2.656-8.292l-6.729-60.51c10.927-7.948,17.458-20.521,17.458-34.313
+											c0-23.531-19.135-42.667-42.667-42.667S213.333,296.469,213.333,320C213.333,333.792,219.865,346.365,230.792,354.313z
+											 M256,298.667c11.76,0,21.333,9.573,21.333,21.333c0,8.177-4.646,15.5-12.125,19.125c-4.073,1.979-6.458,6.292-5.958,10.781
+											l6.167,55.427h-18.833l6.167-55.427c0.5-4.49-1.885-8.802-5.958-10.781c-7.479-3.625-12.125-10.948-12.125-19.125
+											C234.667,308.24,244.24,298.667,256,298.667z"/>
+										<path d="M437.333,192h-32v-42.667C405.333,66.99,338.344,0,256,0S106.667,66.99,106.667,149.333V192h-32
+											C68.771,192,64,196.771,64,202.667v266.667C64,492.865,83.135,512,106.667,512h298.667C428.865,512,448,492.865,448,469.333
+											V202.667C448,196.771,443.229,192,437.333,192z M128,149.333c0-70.583,57.417-128,128-128s128,57.417,128,128V192h-21.333
+											v-42.667c0-58.813-47.854-106.667-106.667-106.667S149.333,90.521,149.333,149.333V192H128V149.333z M341.333,149.333V192
+											H170.667v-42.667C170.667,102.281,208.948,64,256,64S341.333,102.281,341.333,149.333z M426.667,469.333
+											c0,11.76-9.573,21.333-21.333,21.333H106.667c-11.76,0-21.333-9.573-21.333-21.333v-256h341.333V469.333z"/>
+									</g>
+								</g>
+							</g>
+							</svg>
+						</div>
+						<input type="password" required [(ngModel)]="loginuserdata.password" class="form-control form-control-lg rounded-0 logintxtbox" required="" placeholder="Password">
+						<!-- <span class="loginerrortxt">invalid Password</span> -->
+					</div>
+					<div class="form-group row mt-4">
+						<span class="qcheckbox col-6">
+							<input type="checkbox" id="impact3" class="checkStatus">
+							<label for="impact3">Keep me logged in</label>
+						</span>
+						<div class="col-6 text-right passlink"><a href="https://myimpact.in/index.php?page=ForgotPassword">Forgot password?</a></div>
+					</div>
+					<button class="btn btn-success w-100 mt-3 loginbtn" (click)="loginuser()">Login</button>
+					<div class="p-3 mt-3" style="background-color:#f2f5fa; font-size:13px;">
+						Trouble logging in? Contact us 
+						<b>
+							<a href="mailto:helpdesk@impactmeasurement.co.in">helpdesk@impactmeasurement.co.in</a>
+						</b>
+					</div>
+		 
+				<!-- </form> -->
+			</div>
+		</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

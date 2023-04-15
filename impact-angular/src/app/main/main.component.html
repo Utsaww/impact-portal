@@ -1,0 +1,1471 @@
+<ng4-loading-spinner [timeout]="40000000"></ng4-loading-spinner>
+<div class="container-fluid d-flex h-100">
+    <div class="row flex-grow-1">
+        <!-- <div class="d-flex" style="flex: 1 0 auto;"> -->
+        <div class="d-flex w-100 ssflex">
+            <!--Left Navigation Start-->
+            <div class="nav-width d-flex flex-column" id="opencloseMenu">
+                <div>
+                    <a href="javascript:void(0)" style="padding: 12px 19px 19px 19px;
+                      display: inline-block;" id="anc" (click)="openMenu($event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.233 18.332" width="26" height="18"
+                            style="vertical-align: top;">
+                            <g id="Symbol_1_3" data-name="Symbol 1 â€“ 3" transform="translate(-16.713 -22.746)">
+                                <rect id="Rectangle_12" data-name="Rectangle 12" class="fill-white" width="26.233"
+                                    height="3.928" rx="1.964" transform="translate(16.713 22.746)" />
+                                <rect id="Rectangle_13" data-name="Rectangle 13" class="fill-white" width="26.233"
+                                    height="3.928" rx="1.964" transform="translate(16.713 29.948)" />
+                                <rect id="Rectangle_14" data-name="Rectangle 14" class="fill-white" width="26.233"
+                                    height="3.928" rx="1.964" transform="translate(16.713 37.149)" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="top-nav">
+                    <div class="smart-manage">
+                        <a href="javascript:void(0)" class="active">
+                            <span data-toggle="tooltip" title="Smart Manage" data-placement="right">
+                                <svg id="dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20"
+                                    width="20">
+                                    <defs>
+                                    </defs>
+                                    <g id="Group_11" data-name="Group 11">
+                                        <g id="Group_10" data-name="Group 10">
+                                            <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-1" width="8.889"
+                                                height="6.667" transform="translate(11.111)" />
+                                            <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-1" width="8.889"
+                                                height="11.111" />
+                                            <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-1" width="8.889"
+                                                height="6.667" transform="translate(0 13.333)" />
+                                            <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-1" width="8.889"
+                                                height="11.111" transform="translate(11.111 8.889)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <div class="nav-text">Smart Manage</div>
+                        </a>
+                    </div>
+                    <div class="smart-manage">
+                        <a *ngIf="enablefordash" routerLink="/dashboard">
+                            <span data-toggle="tooltip" title="Smart Dashboard" data-placement="right">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+                                20 20" width="20" height="20">
+                                    <defs>
+                                    </defs>
+                                    <g id="bar-chart" transform="translate(20)
+                                rotate(90)">
+                                        <path data-name="Path 3" class="cls-1" d="M0,15H20v1.25H0Z" transform="translate(0
+                                    3.75)" />
+                                        <path data-name="Path 4" class="cls-1" d="M0,11H4v3.75H0Z" transform="translate(0
+                                    2.75)" />
+                                        <path data-name="Path 6" class="cls-1" d="M8,5h4V16.25H8Z" transform="translate(0
+                                    1.25)" />
+                                        <path data-name="Path 7" class="cls-1" d="M12,0h4V17.5H12Z"
+                                            transform="translate(4)" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <div class="nav-text">Smart Dashboard</div>
+                        </a>
+                        <a *ngIf="!enablefordash"
+                            [ngClass]="{'menudisabled': dashdisabledClass === 'menudisabled', '':dashdisabledClass===''}">
+                            <span data-toggle="tooltip" title="Smart Dashboard" data-placement="right">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+                                20 20" width="20" height="20">
+                                    <defs>
+                                    </defs>
+                                    <g id="bar-chart" transform="translate(20)
+                                rotate(90)">
+                                        <path data-name="Path 3" class="cls-1" d="M0,15H20v1.25H0Z" transform="translate(0
+                                    3.75)" />
+                                        <path data-name="Path 4" class="cls-1" d="M0,11H4v3.75H0Z" transform="translate(0
+                                    2.75)" />
+                                        <path data-name="Path 6" class="cls-1" d="M8,5h4V16.25H8Z" transform="translate(0
+                                    1.25)" />
+                                        <path data-name="Path 7" class="cls-1" d="M12,0h4V17.5H12Z"
+                                            transform="translate(4)" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <div class="nav-text">Smart Dashboard</div>
+                        </a>
+                    </div>
+                    <div class="smart-manage">
+                        <a routerLink="/smartanalyse">
+                            <span data-toggle="tooltip" title="Smart Analyse" data-placement="right">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 15" width="20" height="15">
+                                    <defs></defs>
+                                    <path id="Path_8" data-name="Path 8" class="cls-1"
+                                        d="M20,1.758H10.659V0H9.341V1.758H0V3.077H1.758V14.945H18.242V3.077H20Zm-9.021,8.835L9.021,8.635,5.3,12.354l-.932-.932L9.021,6.77l1.959,1.958L14.7,5.009l.932.932Z" />
+                                </svg>
+                            </span>
+                            <div class="nav-text">Smart Analyse</div>
+                        </a>
+                    </div>
+
+                    <div class="smart-manage">
+                        <a routerLink="/smartstats">
+                            <span data-toggle="tooltip" title="Smart Stats" data-placement="right">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                                    style="enable-background:new 0 0 20 20;" width="20" height="20"
+                                    xml:space="preserve">
+                                    <polygon class="cls-1" points="20,18.8 20,20 0,20 0,0 1.3,0 1.3,18.8 " />
+                                    <polygon class="cls-1"
+                                        points="8.9,7.6 14,8.8 15.8,6 17.4,6.9 17.5,2.2 13.1,4.5 14.7,5.4 13.5,7.4 8.6,6.3 3.3,11.3 4.2,12.1 " />
+                                    <polygon class="cls-1" points="7.5,17.6 10,17.6 10,9.1 9.3,8.9 7.5,10.6 " />
+                                    <polygon class="cls-1" points="3.8,13.4 3.8,17.6 6.3,17.6 6.3,11.8 4.2,13.8 " />
+                                    <polygon class="cls-1" points="15,9.6 15,17.6 17.5,17.6 17.5,8.4 16.2,7.6 " />
+                                    <polygon class="cls-1" points="13.8,17.6 13.8,10 11.3,9.4 11.3,17.6 " />
+                                </svg>
+                            </span>
+                            <div class="nav-text">Smart Stats</div>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="smart-manage">
+                        <a (click)="advanceSearchModal()" href="javascript:void(0)">
+                            <span data-toggle="tooltip" title="Smart Search" data-placement="right">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                                    style="enable-background:new 0 0 20.78 19.95;" width="20" height="20"
+                                    xml:space="preserve">
+                                    <path class="cls-1" d="M20.27,16.69l-5.23-4.63c-0.12-0.11-0.25-0.19-0.39-0.25c0.68-1.16,1.07-2.51,1.07-3.95
+                                      C15.71,3.52,12.2,0,7.86,0C3.52,0,0,3.52,0,7.86c0,4.34,3.52,7.86,7.86,7.86c1.56,0,3.02-0.46,4.25-1.25
+                                      c0.08,0.16,0.19,0.32,0.34,0.45l5.23,4.63c0.64,0.58,1.63,0.53,2.21-0.11l0.49-0.54C20.96,18.26,20.91,17.27,20.27,16.69z
+                                      M7.86,12.67c-2.66,0-4.82-2.16-4.82-4.81c0-2.66,2.16-4.81,4.82-4.81c2.66,0,4.81,2.15,4.81,4.81
+                                      C12.67,10.51,10.51,12.67,7.86,12.67z" />
+                                    <path class="cls-1" d="M20.27,16.69l-5.23-4.63c-0.12-0.11-0.25-0.19-0.39-0.25c0.68-1.16,1.07-2.51,1.07-3.95
+                                      C15.71,3.52,12.2,0,7.86,0C3.52,0,0,3.52,0,7.86c0,4.34,3.52,7.86,7.86,7.86c1.56,0,3.02-0.46,4.25-1.25
+                                      c0.08,0.16,0.19,0.32,0.34,0.45l5.23,4.63c0.64,0.58,1.63,0.53,2.21-0.11l0.49-0.54C20.96,18.26,20.91,17.27,20.27,16.69z
+                                      M7.86,12.67c-2.66,0-4.82-2.16-4.82-4.81c0-2.66,2.16-4.81,4.82-4.81c2.66,0,4.81,2.15,4.81,4.81
+                                      C12.67,10.51,10.51,12.67,7.86,12.67z" />
+                                </svg>
+                            </span>
+                            <div class="nav-text">Advanced Search</div>
+                        </a>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="top-nav bottom-nav">
+                    <div class="smart-manage">
+                        <a routerLink="/accountsettings/contactdetails">
+                            <span data-toggle="tooltip" title="Account & Settings" data-placement="right">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                                    <g id="settings-work-tool" transform="translate(-0.003 0)">
+                                        <g data-name="Group 18" transform="translate(0.003 0)">
+                                            <path data-name="Path 9" class="cls-1"
+                                                d="M19.94,8.89A.651.651,0,0,0,19.3,8.4a2.208,2.208,0,0,1-1.511-3.843.555.555,0,0,0,.061-.754,9.9,9.9,0,0,0-1.584-1.6.557.557,0,0,0-.76.061,2.3,2.3,0,0,1-2.494.56A2.221,2.221,0,0,1,11.657.651a.555.555,0,0,0-.491-.584A9.984,9.984,0,0,0,8.917.061a.557.557,0,0,0-.5.572A2.225,2.225,0,0,1,7.052,2.767,2.311,2.311,0,0,1,4.577,2.2a.558.558,0,0,0-.755-.063A9.933,9.933,0,0,0,2.2,3.739a.556.556,0,0,0,.06.76,2.216,2.216,0,0,1,.559,2.5A2.312,2.312,0,0,1,.647,8.346a.544.544,0,0,0-.578.491,10.018,10.018,0,0,0,0,2.274.662.662,0,0,0,.656.492,2.193,2.193,0,0,1,2.058,1.37,2.224,2.224,0,0,1-.559,2.473.556.556,0,0,0-.061.754,9.931,9.931,0,0,0,1.582,1.6.556.556,0,0,0,.761-.06,2.3,2.3,0,0,1,2.493-.561A2.218,2.218,0,0,1,8.348,19.35a.555.555,0,0,0,.491.584,9.953,9.953,0,0,0,2.25.006.557.557,0,0,0,.5-.573,2.223,2.223,0,0,1,1.368-2.133,2.308,2.308,0,0,1,2.477.563.559.559,0,0,0,.755.063,9.956,9.956,0,0,0,1.618-1.6.555.555,0,0,0-.06-.76,2.216,2.216,0,0,1-.56-2.495,2.239,2.239,0,0,1,2.046-1.356l.124,0a.557.557,0,0,0,.585-.49A10.009,10.009,0,0,0,19.94,8.89Zm-9.922,4.467a3.336,3.336,0,1,1,3.336-3.336A3.339,3.339,0,0,1,10.019,13.357Z"
+                                                transform="translate(-0.003 0)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <div class="nav-text">Account &amp;
+                                Settings
+                            </div>
+                        </a>
+                    </div>
+                    <div class="smart-manage">
+                        <a href="javascript:void(0);" (click)="logoutUser()">
+                            <span data-toggle="tooltip" title="Logout" data-placement="right">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19.315" width="20">
+                                    <g id="logout" transform="translate(0
+                               -1.66)">
+                                        <g data-name="Group 19" transform="translate(0 1.66)">
+                                            <path id="Path_10" data-name="Path
+                                     10" class="cls-1"
+                                                d="M12.619,18.631H2.344V4H12.62a.413.413,0,0,0,.413-.413V2.073a.413.413,0,0,0-.413-.413H.413A.413.413,0,0,0,0,2.073v18.49a.413.413,0,0,0,.413.413H12.619a.413.413,0,0,0,.413-.413V19.043A.412.412,0,0,0,12.619,18.631Z"
+                                                transform="translate(0 -1.66)" />
+                                            <path id="Path_11" data-name="Path 11" class="cls-1"
+                                                d="M33.956,25.245,28.4,19.691a.424.424,0,0,0-.583,0L26.5,21.009a.413.413,0,0,0,0,.583L29.01,24.1H18.15a.413.413,0,0,0-.413.413v2.045a.413.413,0,0,0,.413.413H29.01L26.5,29.481a.413.413,0,0,0,0,.583l1.318,1.318a.412.412,0,0,0,.583,0l5.554-5.554a.412.412,0,0,0,0-.584Z"
+                                                transform="translate(-14.078
+                                     -15.879)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <div class="nav-text">Logout</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Left Navigation End-->
+            <div class="d-flex flex-grow-1">
+                <div id="outer1" class="d-flex flex-column
+                                                               flex-grow-1">
+                    <div class="container-fluid">
+                        <div class="row bg-white">
+                            <div class="col-md-12" style="background-color: #fff;
+                                                                                                box-shadow: 0 1px 2px rgb(0, 0, 0,
+                                                                                                .2);">
+                                <div class="float-left py-2">
+                                    <img src="assets/images/login-mpactlogo.png" width="115">
+
+
+                                </div>
+                                <div class="styled-select blue
+                                                                                                   semi-square"
+                                    style="float:
+                                                                                                           right; margin: 12px 0;">
+                                    <select [ngModel]="selectedclient" (ngModelChange)="getclientarticles($event)"
+                                        name="client">
+                                        <option
+                                            *ngFor="let clients of
+                                                                                                                   clientlist"
+                                            [ngValue]="clients.clientid">{{clients.name}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <!-- mobile media type and date range -->
+                        <div class="row">
+                            <div class="col-6 pr-2">
+                                <div class="dropdown media-dropdown">
+                                    <a class="dropdown-toggle media-dropdown" href="javascript:void(0)" role="button"
+                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <span id="selectedType">All</span>
+                                        <span [hidden]="!activeTypeall">({{totalcount}})</span>
+                                        <span [hidden]="!activeTypeprint">({{printcount}})</span>
+                                        <span [hidden]="!activeTypeweb">({{webcount}})</span>
+                                        <span [hidden]="!activeTypeTwitter">({{twittercount}})</span>
+                                    </a>
+
+                                    <div class="dropdown-menu selectperiod" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="javascript:void(0)"
+                                            (click)="getArticlebyType('all')"><span>All</span>
+                                            <span [hidden]="!activeTypeall">({{totalcount}})</span>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:void(0)"
+                                            (click)="getArticlebyType('print')"><span>Print</span>
+                                            <span [hidden]="!activeTypeprint">({{printcount}})</span>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:void(0)"
+                                            (click)="getArticlebyType('web')"><span>Online</span>
+                                            <span [hidden]="!activeTypeweb">({{webcount}})</span>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:void(0)"
+                                            (click)="getArticlebyType('TWITTER')"><span>Twitter</span>
+                                            <span [hidden]="!activeTypeTwitter">({{twittercount}})</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pl-2">
+                                <div class="dropdown media-dropdown">
+                                    <a class="dropdown-toggle media-dropdown" href="javascript:void(0)" role="button"
+                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <span id="selectedTypedaterange">Today</span>
+                                    </a>
+
+                                    <div class="dropdown-menu selectnewsrange" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="javascript:void(0)"
+                                            (click)="getArticlebyDate('today');">Today</a>
+                                        <a class="dropdown-item" href="javascript:void(0)"
+                                            (click)="getArticlebyDate('yesterday');">Yesterday</a>
+                                        <a class="dropdown-item" href="javascript:void(0)"
+                                            (click)="getArticlebyDate('7days');">Last 7 Days</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Custom</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile media type and date range end -->
+                        <!-- date range -->
+                        <div class="row dvresponsivedaterange" style="display: none;">
+                            <!-- <div class="col-5 pr-2">
+                                <input type="date" class="form-control media-dropdown" id="txtstartdate" style="font-size: 13px;">
+                            </div>
+                            <div class="col-5 pl-2 pr-2">
+                                <input type="date" class="form-control media-dropdown" id="txtenddate" style="font-size: 13px;">
+                            </div>
+                            <div class="col-2 pl-2">
+                                <button class="btn impact-primary media-dropdown" style="width: 100%; min-width:auto; margin: 8px 0;" (click)="responsivecustomdaterange();">
+									<i class="fas fa-searchfas fa-search"></i>
+								</button>
+                            </div> -->
+
+                            <div class="col-md-12">
+                                <input type="text" style="height:auto; padding:0px 12px; font-size: 13px;"
+                                    name="rangevalue" value="" class="form-control py-1 config-demo">
+                            </div>
+                        </div>
+                        <!-- date range end -->
+                        <div class="row hidess">
+                            <div class="col-md-12">
+                                <div class="media-type">
+                                    <ul class="nav custom-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" [class.active]="activeTypeall" href="javascript:void(0)"
+                                                (click)="getArticlebyType('all')">All
+                                                <span [hidden]="!activeTypeall">({{totalcount}})</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" [class.active]="activeTypeprint"
+                                                [class.disabled]="enableforprint" href="javascript:void(0)"
+                                                (click)="getArticlebyType('print')">Print<span
+                                                    [hidden]="!activeTypeprint">({{printcount}})</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" [class.active]="activeTypeweb"
+                                                [class.disabled]="enableforweb" href="javascript:void(0)"
+                                                (click)="getArticlebyType('web')">Online
+                                                <span [hidden]="!activeTypeweb">({{webcount}})</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" [class.active]="activeTypeTwitter"
+                                                [class.disabled]="enableForTwitter" href="javascript:void(0)"
+                                                (click)="getArticlebyType('TWITTER')">Twitter
+                                                <span [hidden]="!activeTypeTwitter">({{twittercount}})</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" [class.active]="activeTypetv"
+                                                (click)="getArticlebyType('tv')" [class.disabled]="enableforbr"
+                                                href="javascript:void(0);">TV
+                                                <span [hidden]="!activeTypetv">({{tvcount}})</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+
+                                    <!-- <div style="display: none;" id="Search_reset">Search result  <a href="/home">Re-set</a></div> -->
+                                    <div class="mb-2 result" style="display: none;" id="Search_reset">
+                                        <a class="icon-box" href="/home">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                        <a class="txt" (click)="advanceSearchModal()" href="javascript:void(0)">Search
+                                            Result</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="day-filter" style="position: relative;">
+                                    <div id="duration_aria">
+                                        <ul class="nav nav-pills custom-pills">
+                                            <li [class.active]="isActiveToday">
+                                                <a (click)="getArticlebyDate('today');"
+                                                    href="javascript:void(0)">Today</a>
+                                            </li>
+                                            <li [class.active]="isActiveYesterday">
+                                                <a href="javascript:void(0)"
+                                                    (click)="getArticlebyDate('yesterday');">Yesterday</a>
+                                            </li>
+                                            <li [class.active]="isActive7Days">
+                                                <a href="javascript:void(0)" (click)="getArticlebyDate('7days');">Last 7
+                                                    Days</a>
+                                            </li>
+                                            <li [class.active]="isActivedaterange">
+                                                <a id="dateclick" (click)="getArticlebyDaterange('daterange');"
+                                                    href="javascript:void(0)">
+                                                    <i class="fas fa-calendar-alt"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div id="rangeCal" style="display:none;" class="col-md-12 datetxtbox demo">
+                                            <input type="text" style="height:auto; padding:0px 12px; font-size: 13px;"
+                                                id="config-demo" name="rangevalue" value=""
+                                                class="form-control py-1 config-demo">
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="two1" class="d-flex h-100" style="background-color: #F2F5FA;">
+                        <div id="outer2" class="d-flex
+                                                                                     flex-row flex-grow-1 h-100">
+                            <div id="two2" class="h-100
+                                                                                                flex-grow-1">
+                                <div id="outer3"
+                                    class="d-flex
+                                                                                                           flex-column flex-grow-1 h-100">
+                                    <div id="two3"
+                                        class="d-flex
+                                                                                                                      h-100">
+                                        <!--table comes here-->
+                                        <div
+                                            class="d-flex h-100
+                                                                                                                                 flex-column w-100">
+                                            <!--<div class="pt-2 pb-2">
+                                                                                                                            <div class="col-md-12 article-counts"> Showing 98 Articles in
+
+                                                                                                                            <span class="dropdown">
+                                                                                                                            <a href="#" class="uline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                                                            Print</a>
+                                                                                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                                                                            <a class="dropdown-item" href="#">Show All News Types</a>
+                                                                                                                            <a class="dropdown-item" href="#">Only Print News</a>
+                                                                                                                            <a class="dropdown-item" href="#">Only Web News</a>
+                                                                                                                            <a class="dropdown-item" href="#">Only TV</a>
+                                                                                                                            </div>
+                                                                                                                            </span>
+
+                                                                                                                            from total 298 Articles of last <a href="#" class="uline">7 Days</a>
+
+
+                                                                                                                                  </div>
+                                                                                                                            </div>-->
+                                            <div
+                                                class="d-flex pt-2
+                                                                                                                                            pb-2">
+                                                <div
+                                                    class="col-md-6
+                                                                                                                                                       list-info d-flex">
+                                                    <span class="hidess">{{resultArticle}}
+                                                        Articles | Page</span>
+                                                    <pagination-controls (click)="onActivate($event)" previouslabel=""
+                                                        nextlabel="" screenreaderpaginationlabel="Pagination"
+                                                        screenreaderpagelabel="page"
+                                                        screenreadercurrentlabel="You're
+                                                                                                                                                          on page"
+                                                        (pageChange)="pageChanged($event)" class="my-pagination"
+                                                        responsive="true"></pagination-controls>
+                                                </div>
+                                                <div class="col-md-6
+                                                                                                                                               list-info d-flex lblkeytype align-items-start"
+                                                    style="justify-content:
+                                                                                                                                                       flex-end;margin-top:3px;">
+                                                    <div *ngIf="!activeTypetv">
+                                                        <a href="javascript:void(0)"
+                                                            (click)="getarticlesbykeytype('all')"
+                                                            [class.select]="isActiveAll">All
+                                                            News</a>
+                                                        &nbsp;&nbsp;
+                                                        <a href="javascript:void(0)"
+                                                            (click)="getarticlesbykeytype('company')"
+                                                            [class.select]="isActiveCompany">My
+                                                            Company</a>
+                                                        &nbsp;&nbsp;
+                                                        <a href="javascript:void(0)"
+                                                            (click)="getarticlesbykeytype('competition')"
+                                                            [class.select]="isActiveCompetition">My
+                                                            Competitors</a>
+                                                        &nbsp;&nbsp;
+                                                        <a href="javascript:void(0)"
+                                                            (click)="getarticlesbykeytype('industry')"
+                                                            [class.select]="IsActiveIndustry">Industry</a>
+                                                    </div>
+                                                    &nbsp;<a class="hidess" href="{{excelurl}}"><img
+                                                            src="assets/images/Microsoft_Excel_2013_logo.png"></a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="d-flex
+                                                                                                                                            flex-grow-0; h-100">
+                                                <div
+                                                    class="col-md-12
+                                                                                                                                                       d-flex flex-column
+                                                                                                                                                       list-info h-100
+                                                                                                                                                       flex-grow-0">
+                                                    <!-- This is the header of the table -->
+                                                    <div id="news-table-header"
+                                                        class="d-flex
+                                                                                                                                                                  flex-shrink-0">
+                                                        <div class="hidess">
+
+
+                                                            <input type="checkbox" id="checkAll" />
+
+
+                                                        </div>
+                                                        <div style="flex: 1;">
+                                                            <a href="javascript:void(0)" (click)="sort('date')">Date
+                                                                <i
+                                                                    [ngClass]="{'sort-down'
+                                                                                                                                                                                        :
+                                                                                                                                                                                        sortdateicon,'fas fa-angle-up'
+                                                                                                                                                                                        :
+                                                                                                                                                                                        !sortdateicon}"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div style="flex: 1;"></div>
+                                                        <div *ngIf="!activeTypetv" style="flex: 3;">
+                                                            <a href="javascript:void(0)"
+                                                                (click)="sort('pub')">Publication,
+                                                            </a>
+                                                            <a href="javascript:void(0)" (click)="sort('edi')">
+                                                                Edition
+                                                            </a>
+                                                            <i
+                                                                [ngClass]="{'sort-down' : sortpubicon,'fas fa-angle-up':!sortpubicon}"></i>
+
+
+                                                        </div>
+                                                        <div class="hidess">
+                                                            <div style="height:18px; width:18px;"></div>
+                                                        </div>
+                                                        <div *ngIf="activeTypetv" style="flex: 3;">
+                                                            <a href="javascript:void(0)" (click)="sort('pub')">Channel<i
+                                                                    [ngClass]="{'sort-down'
+                                                                                                                                                                             :
+                                                                                                                                                                             sortpubicon,'fas fa-angle-up'
+                                                                                                                                                                             :
+                                                                                                                                                                             !sortpubicon}"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div style="flex: 5;">
+                                                            <a href="javascript:void(0)" (click)="sort('news')">News
+                                                                <i
+                                                                    [ngClass]="{'sort-down'
+                                                                                                                                                                                        :
+                                                                                                                                                                                        sortnewsicon,'fas fa-angle-up'
+                                                                                                                                                                                        :
+                                                                                                                                                                                        !sortnewsicon}"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div style="flex: 2;">
+                                                            <span *ngIf="!activeTypetv">
+                                                                <a href="javascript:void(0)"
+                                                                    (click)="sort('prominence')">
+                                                                    Prominence &nbsp;<span data-toggle="tooltip"
+                                                                        data-html="true"
+                                                                        title='We use machine learning algorithms to identify Prominent stories. It is possible that a few articles are marked incorrectly.'
+                                                                        data-placement="right"><i
+                                                                            class="fas fa-info-circle"></i></span> <i
+                                                                        [ngClass]="{'sort-down'
+                                                                                                                                                                                                :
+                                                                                                                                                                                                sortprominenceicon,'fas fa-angle-up'
+                                                                                                                                                                                                :
+                                                                                                                                                                                                !sortprominenceicon}"></i>
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of the header of the table -->
+                                                    <div class="t-body-outer">
+                                                        <div id="news-table-body"
+                                                            style="overflow:
+                                                                                                                                                                     auto;"
+                                                            class="d-flex
+                                                                                                                                                                             h-100 bg-white
+                                                                                                                                                                             flex-column
+                                                                                                                                                                             mozhight">
+                                                            <div class="t-body-inner"
+                                                                *ngFor="let data
+                                                                                                                                                                                        of info | filter:searchText |
+                                                                                                                                                                                        paginate: {
+                                                                                                                                                                                        itemsPerPage: 100,
+                                                                                                                                                                                        currentPage: p,
+                                                                                                                                                                                        totalItems:
+                                                                                                                                                                                        totalcount} ">
+                                                                <!-- This is the row of the table (REPETE THIS PART) -->
+                                                                <div id="inner1-{{data.articleid}}"
+                                                                    class="d-flex
+                                                                                                                                                                                                   flex-row
+                                                                                                                                                                                                   flex-shrink-0">
+                                                                    <div class="flexcell hidess"><input
+                                                                            class="checkedarticlesList" type="checkbox"
+                                                                            name="{{data.articleid}}"
+                                                                            [checked]="(checkedArticle
+                                                                                                                                                                                                      && (-1 !==
+                                                                                                                                                                                                      checkedArticle.indexOf(data.articleid))
+                                                                                                                                                                                                      ? 'checked'
+                                                                                                                                                                                                      : '')"
+                                                                            (change)="onChangecheckbox(data.articleid,data.headline,data.publication,data.qualification.length,
+                                                                                                                                                                                                      $event.target.checked)"
+                                                                            [value]="data.articleid">
+                                                                    </div>
+                                                                    <div class="flexcell"
+                                                                        style="flex:
+                                                                                                                                                                                                      1;">
+                                                                        {{data.pubdate
+                                                                        | date : 'd
+                                                                        MMM y'}}
+                                                                    </div>
+                                                                    <div class="flexcell"
+                                                                        style="flex:1; text-align:center">
+                                                                        <span class="pub-type">{{data.type}}</span>
+                                                                        <span class="iconxs" *ngIf="data.type=='PRINT'">
+                                                                            <i class="fas fa-newspaper"></i>
+                                                                        </span>
+                                                                        <span class="iconxs" *ngIf="data.type=='WEB'">
+                                                                            <i class="fas fa-globe"></i>
+                                                                        </span>
+                                                                        <span class="iconxs"
+                                                                            *ngIf="data.type=='TWITTER'">
+                                                                            <i class="fab fa-twitter"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="flexcell"
+                                                                        style="flex:
+                                                                                                                                                                                                              3;">
+                                                                        {{data.publication}}
+
+
+                                                                        <span class="pub-city">
+                                                                            {{data.city}}</span>
+                                                                    </div>
+                                                                    <div class="flexcell hidess">
+                                                                        <!-- <a *ngIf="data.showcase==1 || helper.checkArticleArray(showcasearticle,data.articleid)"
+                                                                                                                                                                                                         href="javascript:void(0);"
+                                                                                                                                                                                                         (click)="setShowcase(data.articleid,$event)"><svg
+                                                                                                                                                                                                            xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                                                                                                                                                            viewBox="0 0 18 18">
+                                                                                                                                                                                                            <g id="Group_35" data-name="Group 35"
+                                                                                                                                                                                                               transform="translate(-556 -363)">
+                                                                                                                                                                                                               <rect id="Rectangle_37" data-name="Rectangle 37"
+                                                                                                                                                                                                                  width="18" height="18" rx="2"
+                                                                                                                                                                                                                  transform="translate(556 363)" fill="#2262a0" />
+                                                                                                                                                                                                               <path id="star"
+                                                                                                                                                                                                                  d="M5.483,1.347,6.611,3.632a.538.538,0,0,0,.406.295l2.522.367a.538.538,0,0,1,.3.918L8.012,6.991a.539.539,0,0,0-.155.477l.431,2.512a.539.539,0,0,1-.781.568L5.251,9.361a.539.539,0,0,0-.5,0L2.494,10.547a.539.539,0,0,1-.781-.568l.431-2.512a.539.539,0,0,0-.155-.477L.164,5.212a.538.538,0,0,1,.3-.918l2.522-.367a.538.538,0,0,0,.406-.295L4.518,1.347A.538.538,0,0,1,5.483,1.347Z"
+                                                                                                                                                                                                                  transform="translate(559.999 365.953)" fill="#fff" />
+                                                                                                                                                                                                            </g>
+                                                                                                                                                                                                         </svg></a>
+
+                                                                                                                                                                                                      <a *ngIf="data.showcase!=1 " href="javascript:void(0);"
+                                                                                                                                                                                                         (click)="setShowcase(data.articleid,$event)"><svg
+                                                                                                                                                                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                                                                                                                                                                                                            width="18" height="18">
+
+                                                                                                                                                                                                            <g id="Group_35" data-name="Group 35"
+                                                                                                                                                                                                               transform="translate(-556 -363)">
+                                                                                                                                                                                                               <rect data-name="Rectangle 37" class="news-icon-bg"
+                                                                                                                                                                                                                  width="18" height="18" rx="2"
+                                                                                                                                                                                                                  transform="translate(556 363)"></rect>
+                                                                                                                                                                                                               <path id="star" class="fill-white"
+                                                                                                                                                                                                                  d="M5.483,1.347,6.611,3.632a.538.538,0,0,0,.406.295l2.522.367a.538.538,0,0,1,.3.918L8.012,6.991a.539.539,0,0,0-.155.477l.431,2.512a.539.539,0,0,1-.781.568L5.251,9.361a.539.539,0,0,0-.5,0L2.494,10.547a.539.539,0,0,1-.781-.568l.431-2.512a.539.539,0,0,0-.155-.477L.164,5.212a.538.538,0,0,1,.3-.918l2.522-.367a.538.538,0,0,0,.406-.295L4.518,1.347A.538.538,0,0,1,5.483,1.347Z"
+                                                                                                                                                                                                                  transform="translate(559.999 365.953)"></path>
+                                                                                                                                                                                                            </g>
+                                                                                                                                                                                                         </svg></a> -->
+
+                                                                        <a href="javascript:void(0);"
+                                                                            (click)="setShowcase(data.articleid,$event)">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                viewbox="0 0 18 18" width="18"
+                                                                                height="18">
+
+                                                                                <g [ngClass]="{'blueshowcase': data.showcase==1, 'greyshowcase':data.showcase!=1 }"
+                                                                                    id="Group_35" data-name="Group 35"
+                                                                                    transform="translate(-556 -363)">
+                                                                                    <rect data-name="Rectangle 37"
+                                                                                        width="18" height="18" rx="2"
+                                                                                        transform="translate(556 363)">
+                                                                                    </rect>
+                                                                                    <path id="star" class="fill-white"
+                                                                                        d="M5.483,1.347,6.611,3.632a.538.538,0,0,0,.406.295l2.522.367a.538.538,0,0,1,.3.918L8.012,6.991a.539.539,0,0,0-.155.477l.431,2.512a.539.539,0,0,1-.781.568L5.251,9.361a.539.539,0,0,0-.5,0L2.494,10.547a.539.539,0,0,1-.781-.568l.431-2.512a.539.539,0,0,0-.155-.477L.164,5.212a.538.538,0,0,1,.3-.918l2.522-.367a.538.538,0,0,0,.406-.295L4.518,1.347A.538.538,0,0,1,5.483,1.347Z"
+                                                                                        transform="translate(559.999 365.953)">
+                                                                                    </path>
+                                                                                </g>
+                                                                            </svg>
+                                                                        </a>
+
+                                                                    </div>
+                                                                    <div class="flexcell"
+                                                                        style="flex:
+                                                                                                                                                                                                              5;">
+                                                                        <a *ngIf="data.type!='PRINT'" target="_blank"
+                                                                            [attr.href]="data.url"
+                                                                            class="pub-heading">{{data.headline}}</a>&nbsp;<a
+                                                                            *ngIf="data.type!='PRINT'
+                                                                                                                                                                                                              &&
+                                                                                                                                                                                                              data.type!='TV'"
+                                                                            target="_blank"
+                                                                            [attr.href]="helper.getWebUrl(data.articleid,data.clientid,user.email)"
+                                                                            style="font-weight:700; color:#2262A0;">+</a>
+                                                                        <a *ngIf="data.type!='WEB'
+                                                                                                                                                                                                              &&
+                                                                                                                                                                                                              data.type!='TV' &&
+                                                                                                                                                                                                              data.type!='TWITTER'"
+                                                                            target="_blank"
+                                                                            [attr.href]="helper.getPrintUrl(data.articleid,data.clientid,user.email)"
+                                                                            class="pub-heading">{{data.headline}}
+                                                                        </a>
+                                                                        <a href="javascript:void(0);"
+                                                                            (click)="getSummary($event,data.articleid);"
+                                                                            class="quickview"
+                                                                            style="font-weight:700; color:#2262A0;">
+                                                                            <i class="fas fa-angle-down"></i>
+                                                                        </a>
+
+                                                                        <div id="summ{{data.articleid}}"
+                                                                            style="display: none; max-height:200px;overflow-y:auto;overflow-x:hidden"
+                                                                            class="summ"></div>
+
+
+                                                                        &nbsp;
+                                                                        <svg *ngIf="data.qualification.length!=0
+                                                                                                                                                                                                                 ||
+                                                                                                                                                                                                                 helper.checkArticleArray(resarray,data.articleid)"
+                                                                            version="1.1" id="Layer_1"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px"
+                                                                            viewbox="0 0
+                                                                                                                                                                                                                 18 18"
+                                                                            style="enable-background:new
+                                                                                                                                                                                                                 0 0 18 18;
+                                                                                                                                                                                                                 position:
+                                                                                                                                                                                                                 relative;"
+                                                                            xml:space="preserve" height="18" width="18">
+                                                                            <path
+                                                                                class="st0
+                                                                                                                                                                                                                            blue-fill"
+                                                                                d="M2,0h14c1.1,0,2,0.9,2,2v14c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V2C0,0.9,0.9,0,2,0z" />
+                                                                            <g class="st1">
+                                                                                <path class="st2"
+                                                                                    d="M9.6,11.9c0.2,0.1,0.4,0.3,0.7,0.3c0.3,0.1,0.5,0.1,0.8,0.1c0.2,0,0.4,0,0.6-0.1c0.2-0.1,0.4-0.1,0.5-0.2
+                                                                                                                                                                                                                               c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.1-0.3,0.2-0.4l0.1,0c0,0.3-0.1,0.5-0.1,0.7s-0.2,0.4-0.4,0.5c-0.4,0.4-1,0.7-1.8,0.7
+                                                                                                                                                                                                                               c-0.5,0-0.9-0.1-1.2-0.3c-0.3-0.2-0.6-0.4-0.9-0.8l0,0c-0.3,0-0.6,0-1-0.1c-0.3-0.1-0.7-0.2-1-0.4c-0.6-0.4-1-0.8-1.4-1.4
+                                                                                                                                                                                                                               C4.7,9.6,4.5,9,4.5,8.3c0-0.6,0.1-1.2,0.4-1.7c0.3-0.5,0.6-1,1.1-1.3C6.4,5,6.8,4.8,7.2,4.6s0.9-0.2,1.3-0.2c0.5,0,1,0.1,1.5,0.3
+                                                                                                                                                                                                                               c0.4,0.2,0.7,0.4,1,0.6c0.3,0.3,0.6,0.6,0.8,0.9c0.4,0.6,0.6,1.3,0.6,2c0,0.5-0.1,0.9-0.2,1.3c-0.2,0.4-0.4,0.8-0.7,1.2
+                                                                                                                                                                                                                               c-0.3,0.3-0.5,0.5-0.8,0.7C10.4,11.6,10,11.8,9.6,11.9z
+                                                                                                                                                                                                                               M6.6,11c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.2
+                                                                                                                                                                                                                               c0.1,0.1,0.3,0.1,0.4,0.2s0.3,0.2,0.6,0.5l0,0c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.5-0.7c0.4-0.7,0.6-1.4,0.6-2.3
+                                                                                                                                                                                                                               c0-0.6-0.1-1.1-0.2-1.6c-0.2-0.5-0.4-1-0.7-1.3C10,5.1,9.7,4.9,9.4,4.8c-0.3-0.1-0.6-0.2-1-0.2c-0.4,0-0.7,0.1-1,0.2
+                                                                                                                                                                                                                               C7.2,4.9,6.9,5.1,6.7,5.4C6.4,5.8,6.2,6.2,6,6.7C5.9,7.2,5.8,7.8,5.8,8.4c0,0.5,0.1,1,0.2,1.4C6.1,10.2,6.3,10.6,6.6,11z
+                                                                                                                                                                                                                               M8.2,12
+                                                                                                                                                                                                                               L8.2,12c-0.3-0.3-0.5-0.6-0.7-0.7S7.1,11.1,7,11.1c-0.1,0-0.1,0-0.2,0c0.2,0.3,0.4,0.5,0.7,0.6C7.6,11.8,7.9,11.9,8.2,12z" />
+                                                                            </g>
+                                                                        </svg>
+
+                                                                        <!-- qualification start -->
+
+                                                                        <svg version="1.1" id="q_{{data.articleid}}"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px" viewbox="0 0
+18 18" style="enable-background:new
+0 0 18 18;
+position:
+relative; display: none;" xml:space="preserve" height="18" width="18">
+                                                                            <path class="st0
+           blue-fill" d="M2,0h14c1.1,0,2,0.9,2,2v14c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V2C0,0.9,0.9,0,2,0z" />
+                                                                            <g class="st1">
+                                                                                <path class="st2"
+                                                                                    d="M9.6,11.9c0.2,0.1,0.4,0.3,0.7,0.3c0.3,0.1,0.5,0.1,0.8,0.1c0.2,0,0.4,0,0.6-0.1c0.2-0.1,0.4-0.1,0.5-0.2
+              c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.1-0.3,0.2-0.4l0.1,0c0,0.3-0.1,0.5-0.1,0.7s-0.2,0.4-0.4,0.5c-0.4,0.4-1,0.7-1.8,0.7
+              c-0.5,0-0.9-0.1-1.2-0.3c-0.3-0.2-0.6-0.4-0.9-0.8l0,0c-0.3,0-0.6,0-1-0.1c-0.3-0.1-0.7-0.2-1-0.4c-0.6-0.4-1-0.8-1.4-1.4
+              C4.7,9.6,4.5,9,4.5,8.3c0-0.6,0.1-1.2,0.4-1.7c0.3-0.5,0.6-1,1.1-1.3C6.4,5,6.8,4.8,7.2,4.6s0.9-0.2,1.3-0.2c0.5,0,1,0.1,1.5,0.3
+              c0.4,0.2,0.7,0.4,1,0.6c0.3,0.3,0.6,0.6,0.8,0.9c0.4,0.6,0.6,1.3,0.6,2c0,0.5-0.1,0.9-0.2,1.3c-0.2,0.4-0.4,0.8-0.7,1.2
+              c-0.3,0.3-0.5,0.5-0.8,0.7C10.4,11.6,10,11.8,9.6,11.9z
+              M6.6,11c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.2
+              c0.1,0.1,0.3,0.1,0.4,0.2s0.3,0.2,0.6,0.5l0,0c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.5-0.7c0.4-0.7,0.6-1.4,0.6-2.3
+              c0-0.6-0.1-1.1-0.2-1.6c-0.2-0.5-0.4-1-0.7-1.3C10,5.1,9.7,4.9,9.4,4.8c-0.3-0.1-0.6-0.2-1-0.2c-0.4,0-0.7,0.1-1,0.2
+              C7.2,4.9,6.9,5.1,6.7,5.4C6.4,5.8,6.2,6.2,6,6.7C5.9,7.2,5.8,7.8,5.8,8.4c0,0.5,0.1,1,0.2,1.4C6.1,10.2,6.3,10.6,6.6,11z
+              M8.2,12
+              L8.2,12c-0.3-0.3-0.5-0.6-0.7-0.7S7.1,11.1,7,11.1c-0.1,0-0.1,0-0.2,0c0.2,0.3,0.4,0.5,0.7,0.6C7.6,11.8,7.9,11.9,8.2,12z" />
+                                                                            </g>
+                                                                        </svg>
+
+                                                                        <!-- for qualification q simble end -->
+                                                                    </div>
+                                                                    <div *ngIf="activeTypetv
+                                                                                                                                                                                                      ||
+                                                                                                                                                                                                      data.type=='TV'"
+                                                                        class="flexcell"
+                                                                        style="flex:
+                                                                                                                                                                                                              4;">
+                                                                        <div class="d-inline-flex">
+                                                                            <div>
+                                                                                {{data.area}}
+                                                                            </div>
+                                                                            <div class="mx-3">
+                                                                                <a href="javascript:void(0);"
+                                                                                    (click)="viewBroadcast(data.url)">View</a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="{{data.url}}">Download</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div *ngIf="!activeTypetv
+                                                                                                                                                                                                      &&
+                                                                                                                                                                                                      data.type!='TV'"
+                                                                        class="flexcell"
+                                                                        style="flex:
+                                                                                                                                                                                                              2;">
+                                                                        <div *ngIf="data.captureddatetime < substractNmin"
+                                                                            class="inline-circle text-white">
+                                                                            <!---->
+                                                                            <div class="pro-circles border-success-light m-1"
+                                                                                *ngIf="article.getCompanyProminent(data.keyword)=='not' else companyprotemplate">
+                                                                            </div>
+                                                                            <ng-template #companyprotemplate>
+                                                                                <div class="m-1 bg-success pro-circles"
+                                                                                    *ngIf="article.getCompanyProminent(data.keyword)!='not' && article.getCompanyProminent(data.keyword)=='Prominent'">
+                                                                                </div>
+                                                                                <div class="m-1 border light-green-bg pro-circles"
+                                                                                    *ngIf="article.getCompanyProminent(data.keyword)!='not' && article.getCompanyProminent(data.keyword)!='Prominent'">
+                                                                                </div>
+                                                                            </ng-template>
+                                                                            <div class="pro-circles border-danger-light m-1"
+                                                                                *ngIf="article.getCompetitionProminent(data.keyword,data.articleid)=='not' else compeprotemplate">
+                                                                            </div>
+                                                                            <ng-template #compeprotemplate>
+                                                                                <div class="m-1 bg-danger pro-circles"
+                                                                                    *ngIf="article.getCompetitionProminent(data.keyword,data.articleid)!='not' && article.getCompetitionProminent(data.keyword,data.articleid)=='Prominent' ">
+                                                                                </div>
+                                                                                <div class="m-1 light-red-bg pro-circles"
+                                                                                    *ngIf="article.getCompetitionProminent(data.keyword,data.articleid)!='not' && article.getCompetitionProminent(data.keyword,data.articleid)!='Prominent' ">
+                                                                                </div>
+                                                                            </ng-template>
+                                                                            <div class="pro-circles border-warning-light m-1"
+                                                                                *ngIf="article.getIndustryProminent(data.keyword)=='not'  else indprotemplate">
+                                                                            </div>
+                                                                            <ng-template #indprotemplate>
+                                                                                <div class="m-1 bg-warning pro-circles"
+                                                                                    *ngIf="article.getIndustryProminent(data.keyword)!='not' && article.getIndustryProminent(data.keyword)=='Prominent' ">
+                                                                                </div>
+                                                                                <div class="m-1 light-yellow-bg pro-circles"
+                                                                                    *ngIf="article.getIndustryProminent(data.keyword)!='not' && article.getIndustryProminent(data.keyword)!='Prominent' ">
+                                                                                </div>
+                                                                            </ng-template>
+                                                                            <!---->
+                                                                            <div class="m-1 bg-white pro-circles"
+                                                                                style="border: solid 1px #707070; display: none;">
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div *ngIf="data.captureddatetime > substractNmin"
+                                                                            class="inline-circle text-white">
+                                                                            &nbsp; <div class="pro-circles"
+                                                                                style="color: #ddd; font-size: 19px; line-height: 0;">
+                                                                                <i class="far fa-times-circle"></i>
+                                                                            </div>
+
+                                                                        </div>
+
+
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <!-- End of the row of the table -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--table comes here-->
+                                    </div>
+                                    <div id="three3" class=""></div>
+                                </div>
+                            </div>
+                            <div id="three2" class="" style="flex: 0 0 250px;">
+                                <div class="container-fluid pl-0" style="padding-top: 85px;">
+                                    <div class="">
+                                        <div class="col-12 aside-heading pb-2 pl-0">
+                                            {{selectedarticles}}
+                                            Selected News Articles (<a style="text-decoration:underline"
+                                                href="javascript:void(0);" (click)="clearSlecetion();">clear</a>)
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div
+                                            class="col-12
+                                                                                                                                 aside-links pt-2 pl-0">
+                                            <!-- <a href="{{excelurl}}" target="_blank"  class="uline">Excel</a><br>-->
+                                            <!---<a href="{{excelurl}}" style="text-decoration:underline;"  *ngIf="isArticle" >Excel</a>-->
+                                            <!-- <form action="http://14.140.65.88/excel/excel2.php" style="display: none;" id="formexcel" method="POST">
+                                                                                                                         <input type="hidden" id="articleidsforexcel">
+                                                                                                                         <input type="hidden" id="clientidforexcel">
+                                                                                                                         <input type="hidden" id="fromdateforexcel">
+                                                                                                                         <input type="hidden" id="todateforexcel">
+                                                                                                                         <input type="hidden" id="keytypeforexcel">
+                                                                                                                         <input type="hidden" id="typeforexcel">
+                                                                                                                      </form> -->
+                                            <a href="javascript:void(0)" (click)="getExcel()"
+                                                style="text-decoration:underline;" *ngIf="isArticle"> Excel</a>
+                                            <a href="javascript:void(0)" *ngIf="!isArticle"
+                                                class="disabled">Excel</a><br>
+                                            <a href="javascript:void(0)" style="text-decoration:underline;"
+                                                (click)="getDossier()" *ngIf="isArticle">Dossier</a>
+                                            <a href="javascript:void(0)" *ngIf="!isArticle"
+                                                class="disabled">Dossier</a><br>
+                                            <a href="javascript:void(0)" (click)="getXML();"
+                                                style="text-decoration:underline;" *ngIf="isArticle">XML</a>
+                                            <a href="javascript:void(0)" *ngIf="!isArticle" class="disabled">XML</a><br>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top:
+                                                                                                              30px;"
+                                        class="">
+                                        <ng-template [ngIf]="selectq" [ngIfElse]="qualifyfalse">
+                                            <div
+                                                class="col-12
+                                                                                                                                         aside-heading pb-2
+                                                                                                                                         pl-0">
+                                                Qualify Selected News
+                                                Articles
+                                            </div>
+                                        </ng-template>
+                                    </div>
+                                    <div class="">
+                                        <ng-template [ngIf]="selectq" [ngIfElse]="qualifyfalse">
+                                            <div
+                                                class="col-12
+                                                                                                                                         aside-links pt-2
+                                                                                                                                         pl-0">
+                                                <a *ngIf="!copyq" href="javascript:void(0)"
+                                                    (click)="copyqualification();">COPY</a>
+                                                &nbsp;
+                                                <a *ngIf="copyq" href="javascript:void(0)"
+                                                    (click)="pastequalifications();">PASTE</a>
+                                                <!-- <a target="_blank" routerLink="/qualification" class="uline">Add Qualification</a>-->
+                                            </div>
+                                        </ng-template>
+                                        <ng-template #qualifyfalse>
+                                            <div
+                                                class="col-12
+                                                                                                                                            aside-links pt-2
+                                                                                                                                            pl-0">
+                                                <!-- <a target="_blank" routerLink="/qualification" class="uline">Add Qualification</a>-->
+                                            </div>
+                                        </ng-template>
+                                    </div>
+                                    <div style="margin-top:
+                                                                                                              30px;"
+                                        class="">
+                                        <div
+                                            class="col-12
+                                                                                                                                 aside-heading pb-2
+                                                                                                                                 pl-0">
+                                            Apply Actions
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div
+                                            class="col-12
+                                                                                                                                 aside-links pt-2 pl-0">
+                                            <a href="javascript:void(0)" *ngIf="isArticle"
+                                                (click)="RejectArticleModal()" class="uline">Reject
+                                            </a>
+                                            <a href="javascript:void(0)" *ngIf="!isArticle"
+                                                class="uline
+                                                                                                                                    disabled">Reject
+                                            </a>
+                                            <br>
+                                            <a href="javascript:void(0)" class="uline" *ngIf="isArticle"
+                                                (click)="ModalMail()">
+                                                Mail</a>
+                                            <a href="javascript:void(0)" class="uline disabled" *ngIf="!isArticle"
+                                                data-toggle="modal">
+                                                Mail</a>
+                                        </div>
+                                    </div>
+                                    <div style="display: none !important;"
+                                        class="input-group
+                                                                                                                      col-md-12 mt-2 p-0">
+                                        <input [(ngModel)]="query"
+                                            class="form-control
+                                                                                                                         py-2 border-right-0
+                                                                                                                         border" type="search"
+                                            value="search" [(ngModel)]="searchText" id="example-search-input">
+                                        <span class="input-group-append">
+                                            <button
+                                                class="btn
+                                                                                                                                 btn-outline-secondary
+                                                                                                                                 border-left-0 border"
+                                                type="button">
+                                                <i class="fas fa-searchfas fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+
+                                    <div>
+                                        <a (click)="displayRSS()" href="javascript:void(0);" class="rsslink"><i
+                                                class="fas fa-rss"></i> RSS</a>
+                                    </div>
+
+                                    <div *ngIf="user.email && user.email.includes('@impactmeasurement.co.in')"
+                                        class="input-group col-md-12 mt-2">
+                                        <input class="form-control py-2 border-right-0 border" type="search" value=""
+                                            id="fullTextHomePage">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-outline-secondary border-left-0 border"
+                                                (click)="getFullTextArticle()" type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mailmodal" tabindex="-1">
+    <div class="modal-dialog" role="document" style="width: 70vw; max-width: 70vw;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title aside-heading border-0" id="mailmodallabel">Send Mail</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="max-height: 50vh; overflow-y: auto;">
+                <div class="list-group">
+                    <!--Item Body-->
+                    <div class="list-group-item list-group-item-action flex-column align-items-start"
+                        *ngFor="let articleDetail of selectedmail">
+                        <div class="d-flex w-100 justify-content-between">
+                            <a *ngIf="articleDetail.type == 'PRINT'"
+                                href="https://myimpact.in/clipj_admin.php?id={{articleDetail.md5id}}"
+                                class="mb-1 modal-link">{{articleDetail.headline}}
+                            </a>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                            <a *ngIf="articleDetail.type == 'WEB'" href="{{articleDetail.url}}"
+                                class="mb-1 modal-link">{{articleDetail.headline}}
+                            </a>
+                        </div>
+
+                        <div class="d-flex w-100 justify-content-between">
+                            <a *ngIf="articleDetail.type == 'TWITTER'" href="{{articleDetail.url}}"
+                                class="mb-1 modal-link">{{articleDetail.headline}}
+                            </a>
+                        </div>
+                        <!-- <p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> -->
+                        <small style="color: #A0A0A0;">{{articleDetail.pubdate | date: 'mediumDate'}}</small>
+                    </div>
+                    <!--Item Body End-->
+                    <!--Item Body-->
+                </div>
+            </div>
+            <div style="border-top: 1px solid #e9ecef;">
+                <div class="container-fluid">
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="form-group row impact-form">
+                                <label for="txtEmail" class="col-sm-1 col-form-label">Email</label>
+                                <div class="col-sm-11">
+                                    <input type="email" class="form-control" id="txtEmail" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group row impact-form">
+                                <label for="txtSubject" class="col-sm-1 col-form-label">Subject</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" id="txtSubject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="form-group row impact-form">
+                                <label class="col-sm-1 col-form-label">Comment</label>
+                                <div class="col-sm-11">
+                                    <textarea class="form-control" id="txtComment" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn impact-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn impact-primary" (click)="SendMail()">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Rejectmodal" tabindex="-1">
+    <div class="modal-dialog" role="document" style="width: 70vw; max-width: 70vw;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title aside-heading border-0" id="Rejectmodallabel">Reject Articles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="max-height: 50vh; overflow-y: auto;">
+                <div class="list-group">
+                    <!--Item Body-->
+                    <div class="list-group-item list-group-item-action flex-column align-items-start"
+                        *ngFor="let articleDetail of SelRejectedArticles">
+                        <div class="d-flex w-100 justify-content-between">
+                            <a *ngIf="articleDetail.type == 'PRINT'"
+                                href="https://myimpact.in/clipj_admin.php?id={{articleDetail.md5id}}"
+                                class="mb-1 modal-link">{{articleDetail.headline}}
+                            </a>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                            <a *ngIf="articleDetail.type == 'WEB'" href="{{articleDetail.url}}"
+                                class="mb-1 modal-link">{{articleDetail.headline}}
+                            </a>
+                        </div>
+
+                        <div class="d-flex w-100 justify-content-between">
+                            <a *ngIf="articleDetail.type == 'TWITTER'" href="{{articleDetail.url}}"
+                                class="mb-1 modal-link">{{articleDetail.headline}}
+                            </a>
+                        </div>
+                        <!-- <p class="mb-1 content">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> -->
+                        <small style="color: #A0A0A0;">{{articleDetail.pubdate | date: 'mediumDate'}}</small>
+                    </div>
+                    <!--Item Body End-->
+                    <!--Item Body-->
+                </div>
+            </div>
+            <div style="border-top: 1px solid #e9ecef;">
+                <div class="container-fluid">
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="form-group row impact-form">
+                                <label class="col-sm-2 col-form-label">Reject Reason</label>
+                                <div class="col-sm-10">
+                                    <select id="selRejectReason" class="form-control">
+                                        <option value="-1">---------Select Reason----------</option>
+                                        <option value="1">No Keyword in this Clip</option>
+                                        <option value="2">Duplicate</option>
+                                        <option value="3">Wrong Headline</option>
+                                        <option value="4">Poor Scan Quality</option>
+                                        <option value="5">Non relevent</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn impact-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn impact-primary" (click)="onRejectArticles()">Reject Articles</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Search Modal -->
+<div class="modal fade" id="searchmodal" tabindex="-1" role="dialog" aria-labelledby="searchmodallabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title aside-heading border-0">Advanced Search</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                <div>
+                    <div class="container-fluid">
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="form-group row impact-form">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
+
+                                    <div class="col-sm-5">
+
+                                        <input type="text" style="height:auto; padding:0px 12px; font-size: 13px;"
+                                            id="advance-search-calender" name="rangeAdvanceSearch" value=""
+                                            class="form-control py-1 config-demo">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label">Media Type</label>
+                                    <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="print_media_type" name="check" type="checkbox" value="print"
+                                                    (click)="filterKeyword();clearAlreadySelected()">
+                                                <label for="print_media_type">Print</label>
+                                            </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="web_media_type" name="check" type="checkbox" value="web"
+                                                    (click)="filterKeyword();clearAlreadySelected()">
+                                                <label for="web_media_type">Web</label>
+                                            </span>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="twitter_media_type" name="check" type="checkbox"
+                                                    value="twitter" (click)="clearAlreadySelected()">
+                                                <label for="twitter_media_type">Twitter</label>
+                                            </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="tv_media_type" name="check" type="checkbox" value="tv"
+                                                    (click)="clearAlreadySelected()">
+                                                <label for="tv_media_type">TV</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- --------------News category start------------------------------------------>
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label">News Category</label>
+                                    <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="news_categort_newspaper" name="check" type="checkbox"
+                                                    value="newspaper">
+                                                <label for="news_categort_newspaper">Newspaper</label>
+                                            </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="news_categort_magazine" name="check" type="checkbox"
+                                                    value="magazine">
+                                                <label for="news_categort_magazine">Magazine</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- --------------News category end------------------------------------------>
+
+
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label">Source</label>
+                                    <div class="col-sm-10">
+                                        <!-- <input type="text" class="form-control" placeholder="From"> -->
+                                        <!-- <angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems"
+                              [settings]="dropdownSettings"
+                              [loading] = "loading"
+                              (onSelect)="onItemSelect($event)"
+                              (onDeSelect)="OnItemDeSelect($event)"
+                              (onSelectAll)="onSelectAll($event)"
+                              (onDeSelectAll)="onDeSelectAll($event)"
+                              (onOpen)="onOpen($event)"
+                              (onScrollToEnd)="fetchMore($event)"></angular2-multiselect> -->
+
+                                        <ng-select [items]="dropdownList" bindLabel="name" bindValue="name"
+                                            [multiple]="true" placeholder="Select Source" [(ngModel)]="selectedPubIds"
+                                            (change)="filterEditionAndLanguage()" (search)="filterPub($event)">
+                                        </ng-select>
+
+
+
+                                    </div>
+                                    <div class="col-sm-10 offset-2 mt-2">
+                                        <!-- <div class="searchformtag">Times <a href="#"> <i class="icofont-close"></i> </a></div> -->
+                                    </div>
+                                </div>
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label">Edition</label>
+                                    <div class="col-sm-10">
+                                        <!-- <input type="text" class="form-control" placeholder="From"> -->
+
+                                        <ng-select [items]="dropdownListEdition" [disabled]="editionDisableValue"
+                                            bindLabel="name" bindValue="name" [multiple]="true"
+                                            placeholder="Select Edition" [(ngModel)]="selectedCityIds">
+                                        </ng-select>
+
+
+
+                                    </div>
+                                    <div class="col-sm-10 offset-2 mt-2">
+                                        <!-- <div class="searchformtag">Times <a href="#"> <i class="icofont-close"></i> </a></div> -->
+                                    </div>
+                                </div>
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label">Language</label>
+                                    <div class="col-sm-10">
+                                        <!-- <input type="text" class="form-control" placeholder="From"> -->
+                                        <ng-select [items]="dropdownListLanguage" [disabled]="languageDisableValue"
+                                            bindLabel="name" bindValue="name" [multiple]="true"
+                                            placeholder="Select Language" [(ngModel)]="selectedLanguafeIds">
+                                        </ng-select>
+
+
+                                    </div>
+                                    <div class="col-sm-10 offset-2 mt-2">
+                                        <!-- <div class="searchformtag">Hindi <a href="#"> <i class="icofont-close"></i> </a></div>
+                              <div class="searchformtag">English <a href="#"> <i class="icofont-close"></i> </a></div>
+                              <div class="searchformtag">Tamil <a href="#"> <i class="icofont-close"></i> </a></div> -->
+                                    </div>
+                                </div>
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label">News Type</label>
+                                    <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="company_filter" name="check1" type="checkbox" value="myCom"
+                                                    (click)="filterKeyword();clearSelectedKeywor()">
+                                                <label for="company_filter">My Company</label>
+                                            </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="competitor_filter" name="check2" type="checkbox"
+                                                    value="myCottr" (click)="filterKeyword();clearSelectedKeywor()">
+                                                <label for="competitor_filter">My Competitor</label>
+                                            </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="industry_filter" name="check3" type="checkbox" value="myInd"
+                                                    (click)="filterKeyword();clearSelectedKeywor()">
+                                                <label for="industry_filter">My Industry</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label">Keywords/Issues</label>
+                                    <div class="col-sm-10">
+
+
+                                        <div class="col-sm-10 p-0">
+
+
+                                            <div class="form-check form-check-inline">
+                                                <span class="radio-input showcase">
+                                                    <input type="radio" id="client_keyword" name="keywordTYpe"
+                                                        checked="checked" value="ckey"
+                                                        (click)="filterKeyword();clearSelectedKeywor()">
+                                                    <label for="client_keyword">Keywords</label>
+                                                </span>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <span class="radio-input showcase">
+                                                    <input type="radio" id="client_company" name="keywordTYpe"
+                                                        value="ccom" (click)="filterKeyword();clearSelectedKeywor()">
+                                                    <label for="client_company">Company</label>
+                                                </span>
+                                            </div>
+
+
+
+
+                                        </div>
+
+
+                                        <ng-select [items]="dropdownListKeyword" bindLabel="name" bindValue="name"
+                                            [multiple]="true" placeholder="Select Keywords"
+                                            [(ngModel)]="selectedKeywords" [closeOnSelect]="false"
+                                            [selectableGroupAsModel]="false" [selectableGroup]="true"
+                                            [groupBy]="groupByFn" [groupValue]="groupValueFn">
+                                            <ng-template ng-header-tmp>
+                                                <button (click)="selectAll()" class="btn btn-sm btn-secondary"
+                                                    style="margin: 5px;">Select all</button>
+                                                <button (click)="unselectAll()" class="btn btn-sm btn-secondary"
+                                                    style="margin: 5px;">Unselect all</button>
+                                            </ng-template>
+                                            <ng-template ng-footer-tmp>
+                                                Selected count: {{selectedKeywords.length}}
+                                            </ng-template>
+                                        </ng-select>
+                                        <!-- <input type="text" class="form-control" placeholder="From"> -->
+                                    </div>
+                                    <div class="col-sm-10 offset-2 mt-2">
+                                        <!-- <div class="searchformtag">Times <a href="#"> <i class="icofont-close"></i> </a></div> -->
+                                    </div>
+                                </div>
+                                <div class="form-group row impact-form">
+                                    <label class="col-sm-2 col-form-label"></label>
+                                    <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="showcase_check" name="showcase_check" type="checkbox"
+                                                    value="1">
+                                                <label for="showcase_check">Showcase</label>
+                                            </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <span class="checkbox-input showcase">
+                                                <input id="qualified_check" name="qualified_check" type="checkbox"
+                                                    value="1">
+                                                <label for="qualified_check">Qualified</label>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- dub -->
+                                <div *ngIf="user.email && user.email.includes('@impactmeasurement.co.in')"
+                                    class="form-group row impact-form">
+                                    <label for="fullText" class="col-sm-2 col-form-label">FullText
+                                        Search</label>
+
+                                    <div class="col-sm-5">
+
+                                        <textarea class="form-control" id="fullText" rows="3"></textarea>
+                                    </div>
+
+                                    <span class="checkbox-input within">
+                                        <input id="within_check" name="within_check" type="checkbox"
+                                            [(ngModel)]="withinChecked">
+                                        <label for="within_check">Within</label>
+                                    </span>
+
+                                    <!-- <label for="within" class="col-sm-2 col-form-label">Within Words</label> -->
+                                    <div class="col-sm-3" *ngIf="withinChecked">
+
+                                        <textarea class="form-control" id="withinwords" rows="3"
+                                            (input)="onInput($event)"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- dub -->
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer border-0" style="padding-right: 30px;">
+                <button type="button" class="btn impact-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn impact-primary" (click)="searchArticles()">Search</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search Modal End -->
+
+
+<div align="center" class="modal fade" id="broadcast" tabindex="-1" width="280" height="300">
+    <div class="modal-dialog" role="document" style="width: 70vw; max-width: 70vw;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title aside-heading
+                                                       border-0" id="mailmodallabel">Broadcast</h5>
+                <button type="button" class="close" data-dismiss="modal" (click)="brClose()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto;">
+                <object id="MediaPlayer1" type="video/mpeg" width="280" height="256">
+                    <param name="animationatStart" value="true">
+                    <param name="transparentatStart" value="true">
+                    <param name="autoStart" value="true">
+                    <param name="showControls" value="true">
+                    <param name="Volume" value="-450">
+                    <video width="100%" controls>
+                        <source id="vdourl2" [src]="" type="video/mp4">
+                    </video>
+                </object>
+            </div>
+        </div>
+    </div>
+</div>

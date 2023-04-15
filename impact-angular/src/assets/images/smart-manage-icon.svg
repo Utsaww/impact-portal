@@ -1,0 +1,17 @@
+<svg id="dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_11" data-name="Group 11">
+    <g id="Group_10" data-name="Group 10">
+      <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-1" width="8.889" height="6.667" transform="translate(11.111)"/>
+      <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-1" width="8.889" height="11.111"/>
+      <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-1" width="8.889" height="6.667" transform="translate(0 13.333)"/>
+      <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-1" width="8.889" height="11.111" transform="translate(11.111 8.889)"/>
+    </g>
+  </g>
+</svg>

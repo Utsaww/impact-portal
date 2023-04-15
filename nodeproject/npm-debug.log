@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', 'mongoos' ]
+2 info using npm@1.3.6
+3 info using node@v0.10.48
+4 warn package.json nodeproject@1.0.0 No description
+5 warn package.json nodeproject@1.0.0 No repository field.
+6 warn package.json nodeproject@1.0.0 No README data
+7 warn package.json copy-descriptor@0.1.1 No README data
+8 warn package.json get-value@2.0.6 No README data
+9 warn package.json https@1.0.0 No repository field.
+10 warn package.json https@1.0.0 No README data
+11 warn package.json object-copy@0.1.0 No README data
+12 warn package.json path-is-inside@1.0.2 No README data
+13 warn package.json pstree.remy@1.1.0 No repository field.
+14 warn package.json pstree.remy@1.1.0 No README data
+15 warn package.json static-extend@0.1.2 No README data
+16 verbose readDependencies using package.json deps
+17 verbose cache add [ 'mongoos', null ]
+18 verbose cache add name=undefined spec="mongoos" args=["mongoos",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'mongoos',
+19 verbose parsed url   path: 'mongoos',
+19 verbose parsed url   href: 'mongoos' }
+20 silly lockFile 8a883f4a-mongoos mongoos
+21 verbose lock mongoos /root/.npm/8a883f4a-mongoos.lock
+22 silly lockFile 8a883f4a-mongoos mongoos
+23 silly lockFile 8a883f4a-mongoos mongoos
+24 verbose addNamed [ 'mongoos', '' ]
+25 verbose addNamed [ null, '*' ]
+26 silly lockFile 42a6566b-mongoos mongoos@
+27 verbose lock mongoos@ /root/.npm/42a6566b-mongoos.lock
+28 silly addNameRange { name: 'mongoos', range: '*', hasData: false }
+29 verbose url raw mongoos
+30 verbose url resolving [ 'https://registry.npmjs.org/', './mongoos' ]
+31 verbose url resolved https://registry.npmjs.org/mongoos
+32 info trying registry request attempt 1 at 15:45:30
+33 http GET https://registry.npmjs.org/mongoos
+34 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+35 info trying registry request attempt 2 at 15:45:40
+36 http GET https://registry.npmjs.org/mongoos
+37 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+38 info trying registry request attempt 3 at 15:46:40
+39 http GET https://registry.npmjs.org/mongoos
+40 silly lockFile 42a6566b-mongoos mongoos@
+41 silly lockFile 42a6566b-mongoos mongoos@
+42 error Error: CERT_UNTRUSTED
+42 error     at SecurePair.<anonymous> (tls.js:1430:32)
+42 error     at SecurePair.emit (events.js:92:17)
+42 error     at SecurePair.maybeInitFinished (tls.js:1029:10)
+42 error     at CleartextStream.read [as _read] (tls.js:521:13)
+42 error     at CleartextStream.Readable.read (_stream_readable.js:341:10)
+42 error     at EncryptedStream.write [as _write] (tls.js:418:25)
+42 error     at doWrite (_stream_writable.js:226:10)
+42 error     at writeOrBuffer (_stream_writable.js:216:5)
+42 error     at EncryptedStream.Writable.write (_stream_writable.js:183:11)
+42 error     at write (_stream_readable.js:602:24)
+43 error If you need help, you may report this log at:
+43 error     <http://github.com/isaacs/npm/issues>
+43 error or email it to:
+43 error     <npm-@googlegroups.com>
+44 error System Linux 2.6.32-573.1.1.el6.x86_64
+45 error command "node" "/usr/bin/npm" "install" "mongoos"
+46 error cwd /var/www/html/nodeproject
+47 error node -v v0.10.48
+48 error npm -v 1.3.6
+49 verbose exit [ 1, true ]

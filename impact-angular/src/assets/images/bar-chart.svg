@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="bar-chart" transform="translate(20) rotate(90)">
+    <path id="Path_3" data-name="Path 3" class="cls-1" d="M0,15H20v1.25H0Z" transform="translate(0 3.75)"/>
+    <path id="Path_4" data-name="Path 4" class="cls-1" d="M0,11H4v3.75H0Z" transform="translate(0 2.75)"/>
+    <path id="Path_6" data-name="Path 6" class="cls-1" d="M8,5h4V16.25H8Z" transform="translate(0 1.25)"/>
+    <path id="Path_7" data-name="Path 7" class="cls-1" d="M12,0h4V17.5H12Z" transform="translate(4)"/>
+  </g>
+</svg>

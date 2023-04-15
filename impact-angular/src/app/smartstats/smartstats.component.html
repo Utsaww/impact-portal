@@ -1,0 +1,698 @@
+
+<div class="container-fluid d-flex h-100">
+    <div class="row flex-grow-1">
+  <!-- <div class="d-flex" style="flex: 1 0 auto;"> -->
+      <div class="d-flex w-100 ssflex">
+  <!--Left Navigation Start-->
+  <div class="nav-width d-flex flex-column" id="opencloseMenu">
+    <div>
+      <a href="javascript:void(0)" style="padding: 12px 19px 19px 19px;
+          display: inline-block;" id="anc" (click)="openMenu($event)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.233 18.332" width="26" height="18" style="vertical-align:top;">
+          
+          <g id="Symbol_1_3" data-name="Symbol 1 – 3" transform="translate(-16.713 -22.746)">
+          <rect id="Rectangle_12" data-name="Rectangle 12" class="fill-white" width="26.233" height="3.928" rx="1.964" transform="translate(16.713 22.746)"/>
+          <rect id="Rectangle_13" data-name="Rectangle 13" class="fill-white" width="26.233" height="3.928" rx="1.964" transform="translate(16.713 29.948)"/>
+          <rect id="Rectangle_14" data-name="Rectangle 14" class="fill-white" width="26.233" height="3.928" rx="1.964" transform="translate(16.713 37.149)"/>
+          </g>
+        </svg>
+      
+      </a>
+    </div>
+    <div class="top-nav">
+      <div class="smart-manage">
+        <a routerLink="/home">
+          <span data-toggle="tooltip" title="Smart Manage" data-placement="right">
+        <svg id="dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20" width="20">
+          <defs>
+          </defs>
+          <g id="Group_11" data-name="Group 11">
+          <g id="Group_10" data-name="Group 10">
+            <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-1" width="8.889" height="6.667" transform="translate(11.111)"/>
+            <rect id="Rectangle_20" data-name="Rectangle 20" class="cls-1" width="8.889" height="11.111"/>
+            <rect id="Rectangle_21" data-name="Rectangle 21" class="cls-1" width="8.889" height="6.667" transform="translate(0 13.333)"/>
+            <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-1" width="8.889" height="11.111" transform="translate(11.111 8.889)"/>
+          </g>
+          </g> 
+        </svg>
+        </span>
+          <div class="nav-text">Smart Manage</div>
+        </a>
+      </div>
+      <div class="smart-manage">
+        <a *ngIf="enablefordash" routerLink="/dashboard">
+          <span data-toggle="tooltip" title="Smart Dashboard" data-placement="right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+                  20 20" width="20" height="20">
+                  <defs>
+                  </defs>
+                  <g id="bar-chart" transform="translate(20)
+                  rotate(90)">
+                  <path data-name="Path 3" class="cls-1" d="M0,15H20v1.25H0Z" transform="translate(0
+                      3.75)" />
+                  <path data-name="Path 4" class="cls-1" d="M0,11H4v3.75H0Z" transform="translate(0
+                      2.75)" />
+                  <path data-name="Path 6" class="cls-1" d="M8,5h4V16.25H8Z" transform="translate(0
+                      1.25)" />
+                  <path data-name="Path 7" class="cls-1" d="M12,0h4V17.5H12Z" transform="translate(4)" />
+                  </g>
+              </svg>
+              </span>
+           <div class="nav-text">Smart Dashboard</div>
+        </a>
+        <a *ngIf="!enablefordash" [ngClass]="{'menudisabled': dashdisabledClass === 'menudisabled', '':dashdisabledClass===''}">
+          <span data-toggle="tooltip" title="Smart Dashboard" data-placement="right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+                  20 20" width="20" height="20">
+                  <defs>
+                  </defs>
+                  <g id="bar-chart" transform="translate(20)
+                  rotate(90)">
+                  <path data-name="Path 3" class="cls-1" d="M0,15H20v1.25H0Z" transform="translate(0
+                      3.75)" />
+                  <path data-name="Path 4" class="cls-1" d="M0,11H4v3.75H0Z" transform="translate(0
+                      2.75)" />
+                  <path data-name="Path 6" class="cls-1" d="M8,5h4V16.25H8Z" transform="translate(0
+                      1.25)" />
+                  <path data-name="Path 7" class="cls-1" d="M12,0h4V17.5H12Z" transform="translate(4)" />
+                  </g>
+              </svg>
+              </span>
+           <div class="nav-text">Smart Dashboard</div>
+        </a>
+      </div>
+      <div class="smart-manage">
+          <a routerLink="/smartanalyse">
+              <span data-toggle="tooltip" title="Smart Analyse" data-placement="right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 15" width="20" height="15">
+                  <defs></defs>
+                  <path id="Path_8" data-name="Path 8" class="cls-1" d="M20,1.758H10.659V0H9.341V1.758H0V3.077H1.758V14.945H18.242V3.077H20Zm-9.021,8.835L9.021,8.635,5.3,12.354l-.932-.932L9.021,6.77l1.959,1.958L14.7,5.009l.932.932Z"/>
+              </svg>
+              </span>
+              <div class="nav-text">Smart Analyse</div>
+          </a>
+      </div>
+
+      <div class="smart-manage">
+        <a routerLink="/smartstats" class="active">
+            <span data-toggle="tooltip" title="Smart Stats" data-placement="right">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" width="20" height="20" xml:space="preserve">
+                    <polygon class="cls-1" points="20,18.8 20,20 0,20 0,0 1.3,0 1.3,18.8 "/>
+                    <polygon class="cls-1" points="8.9,7.6 14,8.8 15.8,6 17.4,6.9 17.5,2.2 13.1,4.5 14.7,5.4 13.5,7.4 8.6,6.3 3.3,11.3 4.2,12.1 "/>
+                    <polygon class="cls-1" points="7.5,17.6 10,17.6 10,9.1 9.3,8.9 7.5,10.6 "/>
+                    <polygon class="cls-1" points="3.8,13.4 3.8,17.6 6.3,17.6 6.3,11.8 4.2,13.8 "/>
+                    <polygon class="cls-1" points="15,9.6 15,17.6 17.5,17.6 17.5,8.4 16.2,7.6 "/>
+                    <polygon class="cls-1" points="13.8,17.6 13.8,10 11.3,9.4 11.3,17.6 "/>
+                    </svg>
+            </span>
+            <div class="nav-text">Smart Stats</div>
+        </a>
+      </div>
+        <div class="smart-manage">
+        <a (click)="advanceSearchModal()" href="javascript:void(0)">
+            <span data-toggle="tooltip" title="Advanced Search" data-placement="right">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20.78 19.95;" width="20" height="20" xml:space="preserve">                                                                                
+        <path class="cls-1" d="M20.27,16.69l-5.23-4.63c-0.12-0.11-0.25-0.19-0.39-0.25c0.68-1.16,1.07-2.51,1.07-3.95
+                        C15.71,3.52,12.2,0,7.86,0C3.52,0,0,3.52,0,7.86c0,4.34,3.52,7.86,7.86,7.86c1.56,0,3.02-0.46,4.25-1.25
+                        c0.08,0.16,0.19,0.32,0.34,0.45l5.23,4.63c0.64,0.58,1.63,0.53,2.21-0.11l0.49-0.54C20.96,18.26,20.91,17.27,20.27,16.69z
+                        M7.86,12.67c-2.66,0-4.82-2.16-4.82-4.81c0-2.66,2.16-4.81,4.82-4.81c2.66,0,4.81,2.15,4.81,4.81
+                        C12.67,10.51,10.51,12.67,7.86,12.67z"/>
+        <path class="cls-1" d="M20.27,16.69l-5.23-4.63c-0.12-0.11-0.25-0.19-0.39-0.25c0.68-1.16,1.07-2.51,1.07-3.95
+                        C15.71,3.52,12.2,0,7.86,0C3.52,0,0,3.52,0,7.86c0,4.34,3.52,7.86,7.86,7.86c1.56,0,3.02-0.46,4.25-1.25
+                        c0.08,0.16,0.19,0.32,0.34,0.45l5.23,4.63c0.64,0.58,1.63,0.53,2.21-0.11l0.49-0.54C20.96,18.26,20.91,17.27,20.27,16.69z
+                        M7.86,12.67c-2.66,0-4.82-2.16-4.82-4.81c0-2.66,2.16-4.81,4.82-4.81c2.66,0,4.81,2.15,4.81,4.81
+                        C12.67,10.51,10.51,12.67,7.86,12.67z"/>
+        </svg>
+        </span>
+                        <div class="nav-text">Advanced Search</div>
+        </a>
+  </div>
+    </div>
+      <div class="top-nav bottom-nav">
+      <div class="smart-manage">
+        <a routerLink="/accountsettings/contactdetails">
+          <span data-toggle="tooltip" title="Account &amp; Settings" data-placement="right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+          
+          <g id="settings-work-tool" transform="translate(-0.003 0)">
+          <g data-name="Group 18" transform="translate(0.003 0)">
+            <path data-name="Path 9" class="cls-1" d="M19.94,8.89A.651.651,0,0,0,19.3,8.4a2.208,2.208,0,0,1-1.511-3.843.555.555,0,0,0,.061-.754,9.9,9.9,0,0,0-1.584-1.6.557.557,0,0,0-.76.061,2.3,2.3,0,0,1-2.494.56A2.221,2.221,0,0,1,11.657.651a.555.555,0,0,0-.491-.584A9.984,9.984,0,0,0,8.917.061a.557.557,0,0,0-.5.572A2.225,2.225,0,0,1,7.052,2.767,2.311,2.311,0,0,1,4.577,2.2a.558.558,0,0,0-.755-.063A9.933,9.933,0,0,0,2.2,3.739a.556.556,0,0,0,.06.76,2.216,2.216,0,0,1,.559,2.5A2.312,2.312,0,0,1,.647,8.346a.544.544,0,0,0-.578.491,10.018,10.018,0,0,0,0,2.274.662.662,0,0,0,.656.492,2.193,2.193,0,0,1,2.058,1.37,2.224,2.224,0,0,1-.559,2.473.556.556,0,0,0-.061.754,9.931,9.931,0,0,0,1.582,1.6.556.556,0,0,0,.761-.06,2.3,2.3,0,0,1,2.493-.561A2.218,2.218,0,0,1,8.348,19.35a.555.555,0,0,0,.491.584,9.953,9.953,0,0,0,2.25.006.557.557,0,0,0,.5-.573,2.223,2.223,0,0,1,1.368-2.133,2.308,2.308,0,0,1,2.477.563.559.559,0,0,0,.755.063,9.956,9.956,0,0,0,1.618-1.6.555.555,0,0,0-.06-.76,2.216,2.216,0,0,1-.56-2.495,2.239,2.239,0,0,1,2.046-1.356l.124,0a.557.557,0,0,0,.585-.49A10.009,10.009,0,0,0,19.94,8.89Zm-9.922,4.467a3.336,3.336,0,1,1,3.336-3.336A3.339,3.339,0,0,1,10.019,13.357Z" transform="translate(-0.003 0)"/>
+          </g>
+          </g>
+        </svg>
+        </span>
+
+          <div class="nav-text">Account &amp; Settings</div>
+        </a>
+      </div>
+      <div class="smart-manage">
+        <a href="#">
+            <span data-toggle="tooltip" title="Logout" data-placement="right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19.315" width="20">
+          <g id="logout" transform="translate(0 -1.66)">
+          <g data-name="Group 19" transform="translate(0 1.66)">
+            <path id="Path_10" data-name="Path 10" class="cls-1" d="M12.619,18.631H2.344V4H12.62a.413.413,0,0,0,.413-.413V2.073a.413.413,0,0,0-.413-.413H.413A.413.413,0,0,0,0,2.073v18.49a.413.413,0,0,0,.413.413H12.619a.413.413,0,0,0,.413-.413V19.043A.412.412,0,0,0,12.619,18.631Z" transform="translate(0 -1.66)"/>
+            <path id="Path_11" data-name="Path 11" class="cls-1" d="M33.956,25.245,28.4,19.691a.424.424,0,0,0-.583,0L26.5,21.009a.413.413,0,0,0,0,.583L29.01,24.1H18.15a.413.413,0,0,0-.413.413v2.045a.413.413,0,0,0,.413.413H29.01L26.5,29.481a.413.413,0,0,0,0,.583l1.318,1.318a.412.412,0,0,0,.583,0l5.554-5.554a.412.412,0,0,0,0-.584Z" transform="translate(-14.078 -15.879)"/>
+          </g>
+          </g>
+        </svg>
+        </span>
+
+          <div class="nav-text">Logout</div>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+  <!--Left Navigation End-->
+        <div class="d-flex flex-grow-1">
+    <div id="outer1" class="d-flex flex-column flex-grow-1">
+            <div class="container-fluid">
+        <div class="row bg-white">
+                <div class="col-md-12" style="background-color: #fff; box-shadow: 0 1px 2px rgb(0, 0, 0, .2);">
+        <div class="float-left py-2">
+          <img src="assets/images/logo-impact.png">
+        </div>
+      <div class="styled-select blue semi-square" style="float: right; margin: 8px;">
+      <!-- <select name="client"> 
+        <option>HCL</option>
+        <option>HCL1</option>
+        <option>HCL2</option>
+        <option>HCL3</option>
+        </select> -->
+        <select [ngModel]="selectedclient" (ngModelChange)="changeclient($event)" name="client"> 
+          <option *ngFor="let clients of clientlist" [ngValue]="clients.clientid">{{clients.name}}</option>
+          </select>
+      </div>
+
+          </div>
+              </div>
+      </div>
+            <div id="two1" class="d-flex h-100" style="background-color: #F2F5FA;">
+        <div id="outer2" class="d-flex flex-row flex-grow-1 h-100">
+                <div id="two2" class="h-100 flex-grow-1">
+            <div id="outer3" class="d-flex flex-column flex-grow-1 h-100">
+                    <div id="two3" class="d-flex h-100"> 
+                <!--table comes here-->
+                <div class="d-flex h-100 flex-column w-100">
+      
+                    <div class="d-flex flex-grow-0; h-100">
+                        <div class="col-md-12 d-flex flex-column list-info h-100 pt-3 flex-grow-0">
+                              
+            <!-- Dash -->
+            <div class="d-flex h-100 flex-column">
+              
+              <!--dash header-->
+                <div class="container-fluid pb-4 pt-2 analyse-header">
+                    <div>
+                      
+                        <!-- <ul class="nav days">
+                            <li class="nav-item">
+                              <a class="nav-link" [class.active]="isActiveToday" (click)="getArticlebyDate('today');"
+                                  href="javascript:void(0)">Today</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" [class.active]="isActiveYesterday" href="javascript:void(0)"
+                                  (click)="getArticlebyDate('yesterday');">Yesterday</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" [class.active]="isActive7Days" href="javascript:void(0)"
+                                  (click)="getArticlebyDate('7days');">Last
+                                  7 Days</a>
+                            </li>
+                            <li class="nav-item">
+                              <a id="dateclick" class="nav-link" [class.active]="isActivedaterange"
+                                  (click)="getArticlebyDaterange('daterange');" href="javascript:void(0)">
+                                  <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVGhD7Ze/SxxBHMVPSC+CRRLw4q4xRcAqlkKadNYhJCly3z0VrBQsg0gCYh9IRIjOLMH/II1YpJCQwoAQEQVJQFKIWCgRIhaib3e/t7c7zi5h9wJzxzz4FDvvO7Pz9scwU/lXuSSfO544cj15FUJyz/X8YbZLy/HkG4fkHx77Etdf+7yPd9lujR7PfbnlkDiLQzAItsElpXSflh+qY4fjk3zHJa2RO7HUHQ0sDqJrv5q8Lis8kFGe+GfddcvUVkHQ+SW+zdNggCzUIK1GDZIH5rJZHf90J6hPCcaxrkMSk4KEkJgP6lPSFiqYFgR1H4L6lHSFKgjyuzq52uPUVoZ0fmlIrAXjD9T8Z1pfoXAQ07BBTKOzg2Bv87MNecvT70AN0rLbbjyYWO3l6Tel+wZNx65apmGDmEbhIOh4gR3q9xSe/BH54q/G2wn74ZisetGZX++hbb9xzzyKB9GcCOPTIgJxU6zGLhk3vHG2d8kfyfLQ9t+38TYIN8WyQRIUDgIOB8bkoySNmwY/qOolTnpbqof6epaHtin2cikTxCgKB0FHu/xyUyz7syewQToniCeOHPKfpKivvAh9Er9Ur98T42E/Etuqh/rpLA9trxv3zKNwENMoE+Qcy+x6Egy2EXh4imeqhyX2G/c7UT3Ub2Z5aNtiL5fin5b92W2QXGwQBDl26uJpCpKT7B3c9MQM991VPSy/s1keHsoCe7kUDmIaNohp2CCmoQ9C8lJXbDQk3vP0m0rsi9oIUePpN3XvlbiNhPN4XUvGQ3IxCnHVxdO3MkyVyjXBKXDvwNYA3AAAAABJRU5ErkJggg=="
+                                    height="18" width="18">
+                              </a>
+                            </li>
+                            <li class="nav-item" style="padding:3px 0;">
+                              <div id="rangeCal" style="display:none;" class="col-md-12 demo">
+                                  <input type="text" style="height:auto;
+                                    padding:0px 12px;
+                                    font-size: 13px;" id="config-demo" name="rangevalue" value=""
+                                    class="form-control py-1">
+
+                                  
+                              </div>
+                            </li>
+                        </ul> -->
+                        <ul class="nav nav-pills custom-pills hidess">
+                            <li [class.active]="isActiveToday">
+                              <a (click)="getArticlebyDate('today');"
+                                  href="javascript:void(0)">Today</a>
+                            </li>
+                            <li [class.active]="isActiveYesterday">
+                              <a href="javascript:void(0)"
+                                  (click)="getArticlebyDate('yesterday');">Yesterday</a>
+                            </li>
+                            <li [class.active]="isActive7Days">
+                              <a href="javascript:void(0)"
+                                  (click)="getArticlebyDate('7days');">Last
+                                  7 Days</a>
+                            </li>
+                            <li [class.active]="isActivedaterange">
+                              <a id="dateclick" [class.active]="isActivedaterange"
+                                  (click)="getArticlebyDaterange('daterange');" href="javascript:void(0)">
+                                  <i class="fas fa-calendar-alt"></i>
+                              </a>
+                            </li>
+                            <li class="nav-item" style="padding:3px 0;">
+                              <div id="rangeCal" style="display:none;" class="col-md-12 demo">
+                                  <input type="text" style="height:auto;
+                                    padding:0px 12px;
+                                    font-size: 13px;" id="config-demo" name="rangevalue" value=""
+                                    class="form-control py-1">
+
+                                  
+                              </div>
+                            </li>
+                        </ul>
+						<div class="dropdown media-dropdown">
+						  <a class="dropdown-toggle media-dropdown" href="javascript:void(0)" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span id="selectedType">Today</span>
+						  </a>
+
+						  <div class="dropdown-menu selectperiod" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyDate('today');">Today</a>
+							<a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyDate('yesterday');">Yesterday</a>
+							<a class="dropdown-item" href="javascript:void(0)" (click)="getArticlebyDate('7days');">Last 7 Days</a>
+						  </div>
+						</div>
+						<!-- ssdate -->
+						<div class="row">
+							<div class="col-5 pr-2">
+								<input type="date" class="form-control media-dropdown" style="font-size: 13px;">
+							</div>
+							<div class="col-5 pr-2 pl-2">
+								<input type="date" class="form-control media-dropdown" style="font-size: 13px;">
+							</div>
+							<div class="col-2 pl-2">
+								<button class="btn impact-primary media-dropdown" style="width: 100%; min-width:auto; margin: 8px 0;">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- ssdate end -->
+                    </div>
+
+                    <div class="text-right">
+                      <div>
+                      <label for="staticEmail" class="col-form-label analyzefilterlbl">Dimension</label>
+                      <div class="form-check form-check-inline radiotab">
+                        <input class="form-check-input" type="radio" name="radio_dimensions" id="allarticles" value="allarticles" checked (change)="radio_dimesionChange($event)">
+                        <label class="form-check-label rounded-left" for="allarticles">All Articles</label>
+                      </div><div class="form-check form-check-inline radiotab">
+                        <input class="form-check-input" type="radio" name="radio_dimensions" id="onlyProminent" value="onlyProminent" (change)="radio_dimesionChange($event)">
+                        <label class="form-check-label rounded-right" for="onlyProminent" style="margin-right: 15px">Only Prominent</label>
+                      </div>
+                    </div>
+
+                    <div class="mt-2">
+                      <label for="staticEmail" class="col-form-label analyzefilterlbl pl-5">Scope</label>
+                      <div class="form-check form-check-inline radiotab">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1" checked>
+                        <label class="form-check-label rounded-left" for="inlineRadio3">All Sources</label>
+                      </div><div class="form-check form-check-inline radiotab">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2" disabled="disabled">
+                        <label class="form-check-label rounded-right" for="inlineRadio4" style="margin-right: 15px">Target Media</label>
+                      </div>
+                    </div>
+                    </div>
+                    
+                </div>
+              <!--dash header end-->
+              
+                <!-- Body -->
+                  <div class="container-fluid h-100 d-flex flex-column">
+                    <div class="row h-100 d-flex">
+                      <div class="col-md-12">
+                        <div class="row d-flex h-100">
+                          <div class="col-md-12 d-flex flex-column h-100">
+                            <div class="widget">
+                              
+                              
+                                <div class="flex-box" style="top: 0; bottom: 0;">
+                                  <div class="chart h-100 flex-scroll widget-content">
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <div class="tbl">
+                                          <div class="tblrow tblhead"><span class="tblvaluetype">My Print Presence</span></div>
+                                          <div class="tblrow">
+                                            <div class="tblcell"><span class="tblvaluetype">Articles</span></div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="printarticlecount"></span><sup [ngClass]="{'pos': lastprintarticlecountcolor === 'pos', 'neg': lastprintarticlecountcolor === 'neg', 'neu': lastprintarticlecountcolor === 'neu'  }" [innerText]="lastprintarticlecount"></sup></div>
+                                          </div>
+                                          <div class="tblrow">
+                                            <div class="tblcell"><span class="tblvaluetype">Sources</span></div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="sourceCount"></span><sup class="pos" [ngClass]="{'pos': printsourceCountpreviouscolor === 'pos', 'neg': printsourceCountpreviouscolor === 'neg', 'neu': printsourceCountpreviouscolor === 'neu'  }" [innerText]="sourceCountprevious"></sup></div>
+                                          </div>
+                                          <!--Reach & Impressions are interchanged later on-->
+                                          <div class="tblrow">
+                                            <div class="tblcell"><span class="tblvaluetype">Impressions <span data-html="true" data-toggle="tooltip" title='"Impressions" is a measure of how many reading opportunities were created due to the coverage that we got.<br><br> Calculation: We add up circulation numbers of all newspapers where we got coverage. e.g. If we get coverage in Hindustan Times, Delhi four times in the chosen period, the impressions measure will increase by Circulation of Hindustan Times x 4. This gives weightage to more than one articles, appearing in the same publication.<br><br>
+                                              Note: "Impressions" will always be same or more than "Reach".' data-placement="right"><i class="fas fa-info-circle"></i></span></span></div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="allcirculationCountDisplay" title={{allcirculationCountDisplay}}></span><sup [ngClass]="{'pos': allcirculationCountPreviouscolor === 'pos', 'neg': allcirculationCountPreviouscolor === 'neg', 'neu': allcirculationCountPreviouscolor === 'neu'  }" [innerText]="allcirculationCountPrevious"></sup></div>
+                                          </div>
+                                          <div class="tblrow">
+                                              <div class="tblcell"><span class="tblvaluetype">Reach <span data-html="true" data-toggle="tooltip" title='"Reach" measures the total number of people who may have read one (or more) articles in the chosen period. <br><br>Calculation: We add up circulation numbers of each newspaper, where we got coverage, only once, even if we may have got more than one articles in the same newspaper. e.g. If we get coverage in Hindustan Times, Delhi four times in the chosen period, the Reach measure will only add the circulation number of Hindustan Times once. This gives weightage to only one article in one publication. Additional articles in the same publication are not given any weightage.<br><br> Note: "Reach" will always be same or less than "Impressions".' data-placement="right"><i class="fas fa-info-circle"></i></span></span></div>
+                                              <div class="tblcell"><span class="tblvalue" [innerText]="allcirculationDistinctCountDisplay" title={{allcirculationDistinctCountDisplay}}></span><sup [ngClass]="{'pos': allcirculationDistinctCountPreviouscolor === 'pos', 'neg': allcirculationDistinctCountPreviouscolor === 'neg', 'neu': allcirculationDistinctCountPreviouscolor === 'neu'  }" [innerText]="allcirculationDistinctCountPrevious"></sup></div>
+                                          </div>
+                                        </div>
+                                        <div class="chart-heading pt-2">Share of voice
+                                          <br>
+                                          <div style="text-align: center; font-weight: normal; font-size: 11px;line-height: 0;">100% Articles = {{printarticlecountall}}</div>
+                                          <span>Basis # Articles</span>
+										  <div class="chart-popover" (click)="printAllChart('share of voice Print');">
+											<i class="fas fa-external-link-alt"></i>
+										  </div>
+                                        </div>
+                                        <div (click)="printAllChart('share of voice Print');">
+                                          <canvas mdbChart
+                                            [chartType]="chartType2"
+                                            [datasets]="chartDatasets2"
+                                            [labels]="chartLabels2"
+                                            [colors]="chartColors2"
+                                            [options]="chartOptions2"
+                                            [legend]="false"
+                                            (chartHover)="chartHovered2($event)"
+                                            (chartClick)="chartClicked2($event)">
+                                          </canvas>
+                                        </div>
+                                        <div class="chart-heading pt-3">Rank on sources
+                                          <br>
+                                          <span>Basis # Sources Touched</span>
+                                          <div class="chart-popover" (click)="printAllChart('share of Sources Touched Print');">
+                                          <i class="fas fa-external-link-alt"></i>
+                                          </div>
+                                        </div>
+                                        <div class="pt-2 px-lg-3 px-md-0 px-sm-0 px-0" (click)="printAllChart('share of Sources Touched Print');">
+                                            <canvas mdbChart
+                                              [chartType]="chartTypeBar"
+                                              [datasets]="chartPrintDatasetsBar"
+                                              [labels]="chartPrintLabelsBar"
+                                              [colors]="chartColorsBarsourcesPrint"
+                                              [options]="chartOptionsBar"
+                                              [legend]="false"
+                                              (chartHover)="chartHovered($event)"
+                                              (chartClick)="chartClicked($event)">
+                                            </canvas>
+                                          </div>
+                                          <!-----Reach & Impressions are interchanged---------->
+                                        <div class="chart-heading pt-3">Rank on impressions 
+                                          <br>
+                                          <span>Basis # Impressions touched (in Millions)</span>
+                                          <div class="chart-popover" (click)="printAllChart('share of Impressions Touched Print');">
+                                          <i class="fas fa-external-link-alt"></i>
+                                          </div>
+                                        </div>
+                                        <div class="pt-2 px-lg-3 px-md-0 px-sm-0 px-0" (click)="printAllChart('share of Impressions Touched Print');">
+                                            <canvas mdbChart
+                                              [chartType]="chartTypeBar"
+                                              [datasets]="chartCirculationDistinctDatasetsBar"
+                                              [labels]="chartCirculationDistinctLabelsBar"
+                                              [colors]="chartColorsBarReach"
+                                              [options]="chartOptionsBar"
+                                              [legend]="false"
+                                              (chartHover)="chartHovered($event)"
+                                              (chartClick)="chartClicked($event)">
+                                            </canvas>
+                                          </div>
+                                        <div class="chart-heading pt-3">Rank on reach
+                                          <br>
+                                          <span>Basis # Reach touched (in Millions)</span>
+                                          <div class="chart-popover" (click)="printAllChart('share of Reach Touched Print');">
+                                          <i class="fas fa-external-link-alt"></i>
+                                          </div>
+                                        </div>
+                                        <div class="pt-2 px-lg-3 px-md-0 px-sm-0 px-0" (click)="printAllChart('share of Reach Touched Print');">
+                                            <canvas mdbChart
+                                              [chartType]="chartTypeBar"
+                                              [datasets]="chartCirculationAllDatasetsBar"
+                                              [labels]="chartCirculationAllLabelsBar"
+                                              [colors]="chartColorsBarImpression"
+                                              [options]="chartOptionsBar"
+                                              [legend]="false"
+                                              (chartHover)="chartHovered($event)"
+                                              (chartClick)="chartClicked($event)">
+                                            </canvas>
+                                          </div>
+                                        </div>
+                                      <div class="col-md-4">
+                                        <div class="tbl">
+                                          <div class="tblrow tblhead">My Online Presence</div>
+                                          <div class="tblrow">
+                                            <div class="tblcell"><span class="tblvaluetype">Articles</span></div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="webarticlecount"></span><sup [ngClass]="{'pos': lastwebarticlecountcolor === 'pos', 'neg': lastwebarticlecountcolor === 'neg', 'neu': lastwebarticlecountcolor === 'neu'  }" [innerText]="lastwebarticlecount"></sup></div>
+                                          </div>
+                                          <div class="tblrow">
+                                            <div class="tblcell"><span class="tblvaluetype">Sources</span></div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="websourceCount"></span><sup [ngClass]="{'pos': websourceCountpreviouscolor === 'pos', 'neg': websourceCountpreviouscolor === 'neg', 'neu': websourceCountpreviouscolor === 'neu'  }" [innerText]="websourceCountprevious"></sup></div>
+                                          </div>
+                                          <!-- <div class="tblrow" style="visibility: hidden;">
+                                            <div class="tblcell"><span class="tblvaluetype">Viewership</span></div>
+                                            <div class="tblcell"><span class="tblvalue"></span><sup class="neg"></sup></div>
+                                          </div>
+                                          <div class="tblrow" style="visibility: hidden;">
+                                              <div class="tblcell"><span class="tblvaluetype">Viewership</span></div>
+                                              <div class="tblcell"><span class="tblvalue"></span><sup class="neg"></sup></div>
+                                            </div>
+                                        </div> -->
+                                        <div class="tblrow">
+                                            <div class="tblcell"><span class="tblvaluetype">Impressions <span data-html="true" data-toggle="tooltip" title='"Impressions" is a measure of how many reading opportunities were created due to the coverage that we got? <br><br>
+                                              Calculation: We add up visitors count of all online sources, where we got coverage. e.g. If we get coverage on the Firstpost.com website four times in the chosen period, the impressions measure will increase by Average Visitors Count of First post x 4. This gives weightage to more than one articles appearing on the same website.<br><br>
+                                              Note: "Impressions" will always be same or more than "Reach".' data-placement="right"><i class="fas fa-info-circle"></i></span></span></div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="allcirculationWebCountDisplay" title={{allcirculationWebCountDisplay}}></span>
+                                              <sup [ngClass]="{'pos': allcirculationWebCountPreviouscolor === 'pos', 'neg': allcirculationWebCountPreviouscolor === 'neg', 'neu': allcirculationWebCountPreviouscolor === 'neu'  }" [innerText]="allcirculationWebCountPrevious"></sup></div>
+                                          </div>
+                                          <div class="tblrow">
+                                              <div class="tblcell"><span class="tblvaluetype">Reach <span data-html="true" data-toggle="tooltip" title='"Reach" measures the total number of people who may have read one (or more) articles in the chosen period. <br><br>
+                                                Calculation: We add up Visitors count of each online source, where we got coverage, only once, even if we may have got more than one articles in the same online source. e.g. If we get coverage on the Firstpost.com website four times in the chosen period, the Reach measure will only add the Average Vistors Count of Firstpost.com once. This gives weightage to only one article on one website. Additional articles on the same website are not given any weightage.<br><br>
+                                                Note: "Reach" will always be same or less than "Impressions".' data-placement="right"><i class="fas fa-info-circle"></i></span></span></div>
+                                              <div class="tblcell"><span class="tblvalue" [innerText]="allcirculationDistinctWebCountDisplay" title={{allcirculationDistinctWebCountDisplay}}></span>
+                                                <sup [ngClass]="{'pos': allcirculationDistinctWebCountPreviouscolor === 'pos', 'neg': allcirculationDistinctWebCountPreviouscolor === 'neg', 'neu': allcirculationDistinctWebCountPreviouscolor === 'neu'  }" [innerText]="allcirculationDistinctWebCountPrevious"></sup></div>
+                                            </div>
+                                        </div>
+                                        <div class="chart-heading pt-2">Share of voice
+                                            <br>
+                                            <div style="text-align: center; font-weight: normal; font-size: 11px;line-height: 0;">100% Articles = {{webarticlecountall}}</div>
+                                            <span>Basis # Articles</span>
+                                            <div class="chart-popover" (click)="printAllChart('share of voice Web');">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            </div>
+                                          </div>
+                                        <div class="" (click)="printAllChart('share of voice Web');">
+                                          <canvas mdbChart
+                                              [chartType]="chartType2"
+                                              [datasets]="chartDatasetsweb"
+                                              [labels]="chartLabelsweb"
+                                              [colors]="chartColorsWeb"
+                                              [options]="chartOptions2"
+                                              [legend]="false"
+                                              (chartHover)="chartHovered2($event)"
+                                              (chartClick)="chartClicked2($event)">
+                                          </canvas>
+                                        </div>
+                                        <div class="chart-heading pt-3">Rank on sources
+                                          <br>
+                                          <span>Basis # Sources Touched</span>
+                                          <div class="chart-popover" (click)="printAllChart('share of Sources Touched Web');">
+                                          <i class="fas fa-external-link-alt"></i>
+                                          </div>
+                                        </div>
+                                        <div class="pt-2 px-lg-3 px-md-0 px-sm-0 px-0" (click)="printAllChart('share of Sources Touched Web');">
+                                            <canvas mdbChart
+                                              [chartType]="chartTypeBar"
+                                              [datasets]="chartWebDatasetsBar"
+                                              [labels]="chartWebLabelsBar"
+                                              [colors]="chartColorsBarsourcesweb"
+                                              [options]="chartOptionsBar"
+                                              [legend]="false"
+                                              (chartHover)="chartHovered($event)"
+                                              (chartClick)="chartClicked($event)">
+                                          </canvas>
+                                        </div>
+                                        
+                                        <div class="chart-heading pt-3">Rank on impressions 
+                                            <br>
+                                            <span>Basis # Impressions touched (in Millions)</span>
+                                            <div class="chart-popover" (click)="printAllChart('share of Impressions Touched Web');">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            </div>
+                                          </div>
+                                          <div class="pt-2 px-lg-3 px-md-0 px-sm-0 px-0" (click)="printAllChart('share of Impressions Touched Web');">
+                                              <canvas mdbChart
+                                                [chartType]="chartTypeBar"
+                                                [datasets]="chartCirculationWebDistinctDatasetsBar"
+                                                [labels]="chartCirculationWebDistinctLabelsBar"
+                                                [colors]="chartColorsBarWebReach"
+                                                [options]="chartOptionsBar"
+                                                [legend]="false"
+                                                (chartHover)="chartHovered($event)"
+                                                (chartClick)="chartClicked($event)">
+                                              </canvas>
+                                            </div>
+                                          <div class="chart-heading pt-3">Rank on reach
+                                            <br>
+                                            <span>Basis # Reach touched (in Millions)</span>
+                                            <div class="chart-popover" (click)="printAllChart('share of Reach Touched Print');">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            </div>
+                                          </div>
+                                          <div class="pt-2 px-lg-3 px-md-0 px-sm-0 px-0" (click)="printAllChart('share of Reach Touched Web');">
+                                              <canvas mdbChart
+                                                [chartType]="chartTypeBar"
+                                                [datasets]="chartCirculationWebAllDatasetsBar"
+                                                [labels]="chartCirculationWebAllLabelsBar"
+                                                [colors]="chartColorsBarWebImpression"
+                                                [options]="chartOptionsBar"
+                                                [legend]="false"
+                                                (chartHover)="chartHovered($event)"
+                                                (chartClick)="chartClicked($event)">
+                                              </canvas>
+                                            </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="tbl">
+                                          <div class="tblrow tblhead"><span class="tblvaluetype">My Twitter Presence</span></div>
+                                          <div class="tblrow">
+                                            <div class="tblcell">Tweets</div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="tvarticlecount"></span><sup [ngClass]="{'pos': lasttvarticlecountcolor === 'pos', 'neg': lasttvarticlecountcolor === 'neg', 'neu': lasttvarticlecountcolor === 'neu'  }" [innerText]="lasttvarticlecount"></sup></div>
+                                          </div>
+                                          <div class="tblrow">
+                                            <div class="tblcell">Sources</div>
+                                            <div class="tblcell"><span class="tblvalue" [innerText]="twittersourceCount"></span><sup [ngClass]="{'pos': twittersourceCountpreviouscolor === 'pos', 'neg': twittersourceCountpreviouscolor === 'neg', 'neu': twittersourceCountpreviouscolor === 'neu'  }" [innerText]="twittersourceCountprevious"></sup></div>
+                                          </div>
+                                          <div class="tblrow" style="visibility: hidden;">
+                                            <div class="tblcell">Viewrs</div>
+                                            <div class="tblcell"><span class="tblvalue"></span><sup class="neg"></sup></div>
+                                          </div>
+                                          <div class="tblrow" style="visibility: hidden;">
+                                              <div class="tblcell">Viewrs</div>
+                                              <div class="tblcell"><span class="tblvalue"></span><sup class="neg"></sup></div>
+                                            </div>
+                                        </div>
+                                        <div class="chart-heading pt-2">Share of voice
+                                          <br>
+                                          <div style="text-align: center; font-weight: normal; font-size: 11px;line-height: 0;">100% Articles = {{tvarticlecountall}}</div>
+                                          <span>Basis # Tweets</span>
+                                          <div class="chart-popover" (click)="printAllChart('share of voice Twitter');">
+                                          <i class="fas fa-external-link-alt"></i>
+                                          </div>
+                                        </div>
+                                        <div class="" (click)="printAllChart('share of voice Twitter');">
+                                          <canvas mdbChart
+                                            [chartType]="chartType2"
+                                            [datasets]="chartDatasetstv"
+                                            [labels]="chartLabelstv"
+                                            [colors]="chartColorstv"
+                                            [options]="chartOptions2"
+                                            [legend]="false"
+                                            (chartHover)="chartHovered2($event)"
+                                            (chartClick)="chartClicked2($event)">
+                                          </canvas>
+                                        </div>
+                                      
+                                        <div class="chart-heading pt-3">Rank on sources
+                                            <br>
+                                            <span>Basis # Sources Touched</span>
+                                            <div class="chart-popover" (click)="printAllChart('share of Sources Touched Twitter');">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            </div>
+                                          </div>
+                                          <div class="pt-2 px-lg-3 px-md-0 px-sm-0 px-0" (click)="printAllChart('share of Sources Touched Twitter');">
+                                              <canvas mdbChart
+                                                [chartType]="chartTypeBar"
+                                                [datasets]="charttwitterDatasetsBar"
+                                                [labels]="charttwitterLabelsBar"
+                                                [colors]="chartColorsBarsourcestwitter"
+                                                [options]="chartOptionsBar"
+                                                [legend]="false"
+                                                (chartHover)="chartHovered($event)"
+                                                (chartClick)="chartClicked($event)">
+                                            </canvas>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="p-3 legends">
+                        <div *ngFor="let item of allColors | keyvalue">
+                            <i class="fas fa-square" [ngStyle]="{'color': item.value}"></i> &nbsp; {{item.key}} &nbsp;
+                      </div>
+                  </div>
+                <!-- Body End -->
+              
+            </div>
+            
+            <!-- Dash End -->
+            
+            
+            
+            
+                              </div>
+                      </div>
+                      </div>
+                <!--table comes here--> 
+              </div>
+                  
+                  </div>
+          </div>
+                
+              </div>
+      </div>
+          </div>
+  </div>
+      </div>
+  </div>
+  </div>
+</div>
+<ng4-loading-spinner [timeout]="40000"> </ng4-loading-spinner>
+<!-- Central Modal Small -->
+<div class="modal fade" id="centralModalLg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <!-- Change class .modal-sm to change the size of the modal -->
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title w-100 aside-heading border-0" id="myModalLabel">{{text}}</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="dropdown float-right chart-dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+              </a>
+            
+              <div class="dropdown-menu dropdown-menu-right chartdownloadoptions" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" (click)="download_data()" href="javascript: void(0);">Get Data</a>
+                <a class="dropdown-item" (click)="download_img($event)" href="javascript: void(0);">Save As JPEG</a>
+              </div>
+            </div>
+        <canvas mdbChart
+          [chartType]="modalchartType"
+          [datasets]="modalchartDatasets"
+          [labels]="modalchartLabels"
+          [colors]="modalchartColors"
+          [options]="modalchartOptions"
+          [legend]="modallegend"
+          (chartHover)="chartHovered2($event)"
+          (chartClick)="chartClicked2($event)">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Central Modal Small -->

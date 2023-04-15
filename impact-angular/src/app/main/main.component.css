@@ -1,0 +1,41 @@
+.my-pagination /deep/ .ngx-pagination {
+padding:0;
+margin-bottom: 0px;
+
+}
+.lblkeytype a{
+	padding: 2px 0 2px 0;
+}
+.select{
+background-color: #2262a0;
+color: #fff !important;
+border-radius: 3px;
+padding: 2px 5px !important;
+}
+
+.down-red {
+
+fill: #dc3545;
+
+}
+
+.aside-links a.disabled {
+
+  color: gray !important;
+  opacity: 0.8;
+cursor: not-allowed;
+text-decoration: underline;
+}
+
+.modal-link{
+	font-size: 13px;
+	font-weight: 700;
+}
+.content{
+	font-size: 13px;
+}
+.blue-fill{
+
+	fill:#2262A0;
+
+}
